@@ -55,7 +55,7 @@ function sendMSJ()
  
  
 </script>
-<html lang="esp">
+<html lang="en">
 	<head>
 		<meta name="comodo_si_verification" content="20767723" />
 		<title>Hobby on the GO</title>
@@ -80,10 +80,10 @@ function sendMSJ()
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Inicio</a></li>
-							<li><a href="#one">Crear Evento</a></li>
-							<li><a href="#two">Listar Eventos</a></li>
-							<li><a href="#three">Contactanos</a></li>
+							<li><a href="#intro">Home</a></li>
+							<li><a href="#one">Add Event</a></li>
+							<li><a href="#two">Search</a></li>
+							<li><a href="#three">Contact us</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -96,12 +96,12 @@ function sendMSJ()
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Hobby on the GO</h1>
-							<p>Realiza tus Hobbys favoritos sin importar donde y con quien...<br />
-							 A tan solo un par de clics encuentra los mejores planes de la ciudad,<br />
-							 esto es Hobby on the GO!.</p>
+							<p>Make your favorite Hobbys no matter where and with who...<br />
+							 Just a couple of clicks and find the best plans of the city,<br />
+							 This is Hobby on the GO!.</p>
 							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Crea tu plan ahora!</a></li>
-								<li><a href="indexEng.html" class="button">English!</a></li>
+								<li><a href="#one" class="button scrolly">Make your event NOW!</a></li>
+								<li><a href="index.html" class="button ">Español!</a></li>
 							</ul>
 						</div>
 					</section>
@@ -109,24 +109,24 @@ function sendMSJ()
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<div class="inner">
-							<h2>Crear Evento</h2>
-							<p>Introduce la siguiente información para crear tu evento (Lugar, Numero de integrantes y una breve descripción)</p>
+							<h2>Add Event</h2>
+							<p>Enter the following information to create your event (Place, Number of members and a brief description)</p>
 							
 								<section>
 									<form action="fuente/Persistence/guardar.php" method = post name = "formulario">						
 										<div class="field">
-											<label for="desc">Descripción </label>
+											<label for="desc">Description </label>
 											<textarea name="desc" id="desc" rows="5"></textarea>
 										
 										
-											<label for="date1">Fecha: </label>
+											<label for="date1">Date: </label>
 											<input name="date1" id="date1" type="datetime-local" min = "2017-03-17T02:01" value =" 2017-03-17T02:01"></input>
 										
 										</div>
 
 
 										<ul class="actions">
-											<li><a href="" class="button submit">Crear</a></li>
+											<li><a href="" class="button submit">Add</a></li>
 										</ul>
 									</form>
 								</section>
@@ -136,16 +136,16 @@ function sendMSJ()
 				<!-- Two -->
 								<section id="two" class="wrapper style3 fade-up">
 										<div class="inner">
-											<h2>Listar eventos</h2>
+											<h2>Search events</h2>
 											<form action="fuente/Persistence/cargar.php" method= post name= "cargar">	
 											<div class="field">
-													<label for="date2">Fecha: </label>
+													<label for="date2">Date: </label>
 													<input name= "date2" id="date2" type="date" min = "2017-03-17" value = "2017-03-17"></input>
 													
 											</div>
 									
 										<ul class="actions">
-											<li><a href="" class="button submit" >Buscar</a></li>
+											<li><a href="" class="button submit" >Search</a></li>
 										</ul>
 									</form>
 								</section>
@@ -153,12 +153,12 @@ function sendMSJ()
 				<!-- Three -->
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
-							<h2>Envíanos un mensaje</h2>
+							<h2>Send us a message</h2>
 							<div class="split style1">
 								<section>
 									<form method="post"  action="mailto:Nicolay.JG@Outlook.com">
 										<div class="field half first">
-											<label for="name">Nombre</label>
+											<label for="name">Name</label>
 											<input type="text" name="name" id="name" />
 										</div>
 										<div class="field half">
@@ -166,18 +166,18 @@ function sendMSJ()
 											<input type="text" name="email" id="email" />
 										</div>
 										<div class="field">
-											<label for="message">Mensaje</label>
+											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="5"></textarea>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Enviar Mensaje</a></li>
+											<li><a href="" class="button submit">Send!</a></li>
 										</ul>
 									</form>
 								</section>
 								<section>
 									<ul class="contact">
 										<li>
-											<h3>Dirección</h3>
+											<h3>Address</h3>
 											<span>Cra 12 #6-30 Int 1<br />
 											Tunja, Boyacá<br />
 											Colombia</span>
@@ -188,7 +188,7 @@ function sendMSJ()
 											<span">Jonathan.Ferrucho@gmail.com</span>
 										</li>
 										<li>
-											<h3>Celular</h3>
+											<h3>Cell phone</h3>
 											<span>3194902583</span>
 										</li>
 									</ul>
