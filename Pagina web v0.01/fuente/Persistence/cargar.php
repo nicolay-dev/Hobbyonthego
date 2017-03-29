@@ -32,48 +32,30 @@
 							<p>Eventos para la fecha seleccionada </p>
 
 							<?php
+							include 'conexion.php';
 								
 								if(isset($_POST['date2'])){
-
-									/*echo "entre al if ---2";*/
-									/*$date= $_PO0ST['date2'];*/
 									
-									$host = "sql202.rf.gd";	
-									$username= "rfgd_19756503";
-									$db = "rfgd_19756503_hobbyonthegoDB";
-									$pass = "mtd3pbWo";
-
-									$connection= new mysqli($host, $username, $pass, $db) or die ("Error al buscar la informacion");
-
-									$fecha_inicio= $_POST['date2'];
+									echo "código php";
+								
+									$conexion= new conexion;
+									$data=$conexion->cargar($_POST['date2']);
+								
+										if($data === false) {
 									
-									$fecha= date("Y-m-d", strtotime("$fecha_inicio"));
-									echo $fecha."<br>";
+										trigger_error('Wrong SQL: ' . $query . ' Error: ' . $conn->error, E_USER_ERROR);
+										} else {
+										  $rows_returned = $data->num_rows;
+										}
 
-									/*echo $date->format('Y-m-d');*/
-									/*echo $_PO0ST['date2'];*/
-									//select * from event where fecha='$fecha';
-									$query="select * from EVENT where fecha='$fecha';";
-									//realiza consulta1
-									$rs= $connection->query($query);
-								
-									if($rs === false) {
-									/*	echo "rs====false";*/
-									  trigger_error('Wrong SQL: ' . $query . ' Error: ' . $conn->error, E_USER_ERROR);
-									} else {
-									/*echo "entre al else";*/
-									  $rows_returned = $rs->num_rows;
-									}
-								
+										$data->data_seek(0);
+										
+										while($row=$data->fetch_assoc()){
+											echo '<br>'.$row['descr'].' / fecha: '.$row['fecha'] .'<br>';
 
-									$rs->data_seek(0);
-									/*echo "llegue al while";*/
-									while($row=$rs->fetch_assoc()){
-									/*	echo "entre al while";*/
-										echo '<br>'.$row['descr'].' / fecha: '.$row['fecha'] .'<br>';
+										}
+								}
 
-									}
-								}	
 							?>
 							<ul class="actions">
 								<li><a href="../../index.html" class="button scrolly">Regresar</a></li>
