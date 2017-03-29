@@ -2,8 +2,8 @@
 
 include 'Objeto.php';
 
-	$Objeto = new Objeto;
-	$Objeto->Nico();
+	$objeto = new Objeto;
+	$objeto->Nico();
 
 
 } ?>
