@@ -55,6 +55,158 @@ function sendMSJ()
  
  
 </script>
+
+<link rel="stylesheet" href="./Caption Hover Animations_files/css">
+	<link rel="stylesheet" href="./Caption Hover Animations_files/css(1)">
+	<style type="text/css">
+	body{
+		/*height: 10000px;*/
+		font-family: "Lato";
+		background-color: #2980b9;
+		padding:20px 30px;
+		margin: 0px;
+	}
+
+	h1,h2,h3,h4{
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.caption-style-1{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		
+	}
+
+	.caption-style-1 li{
+		float: left;
+		padding: 0px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.caption-style-1 li:hover .caption{
+		opacity: 1;
+
+	}
+
+	.caption-style-1 img{
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		z-index: 4;
+	}
+
+
+	.caption-style-1 .caption{
+		cursor: pointer;
+		position: absolute;
+		opacity: 0;
+		-webkit-transition:all 0.45s ease-in-out;
+		-moz-transition:all 0.45s ease-in-out;
+		-o-transition:all 0.45s ease-in-out;
+		-ms-transition:all 0.45s ease-in-out;
+		transition:all 0.45s ease-in-out;
+
+	}
+	.caption-style-1 .blur{
+		background-color: rgba(0,0,0,0.65);
+		height: 300px;
+		width: 400px;
+		z-index: 5;
+		position: absolute;
+	}
+
+	.caption-style-1 .caption-text h1{
+		text-transform: uppercase;
+		font-size: 24px;
+	}
+	.caption-style-1 .caption-text{
+		z-index: 10;
+		color: #fff;
+		position: absolute;
+		width: 400px;
+		height: 300px;
+		text-align: center;
+		top:100px;
+	}
+
+	/** Nav Menu */
+	ul.nav-menu{
+		padding: 0px;
+		margin: 0px;
+		list-style-type: none;
+		width: 510px;
+		margin: 60px auto;
+	}
+
+	ul.nav-menu li{
+		display: inline;
+		margin-right: 10px;
+		padding:10px;
+		border: 1px solid #ddd;
+	}
+
+	ul.nav-menu li a{
+		color: #eee;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	ul.nav-menu li a:hover, ul.nav-menu li a.active{
+		color: #2c3e50;
+	} 
+
+	/** content **/
+	.content{
+		margin-top: 100px;
+		margin-left: 100px;
+		width: 700px;
+	}
+	.content h1, .content h2{
+		font-family: "Source Sans Pro",sans-serif;
+		color: #ecf0f1;
+		padding: 0px;
+		margin: 0px;
+		font-weight: normal;
+	}
+
+	.content h1{
+		font-weight: 900;
+		font-size: 64px;
+	}
+
+	.content h2{
+		font-size:26px;
+	}
+
+	.content p{
+		color: #ecf0f1;
+		font-family: "Lato";
+		line-height: 28px;
+		font-size: 15px;
+		padding-top: 50px;
+	}
+
+	p.credit{
+		padding-top: 20px;
+		font-size: 12px;
+	}
+
+	p a{
+		color: #ecf0f1;
+	}
+
+	/** fork icon**/
+	.fork{
+		position: absolute;
+		top:0px;
+		left: 0px;
+	}
+
+	</style>
+
 <html lang="esp">
 	<head>
 		<meta name="comodo_si_verification" content="20767723" />
@@ -137,16 +289,71 @@ function sendMSJ()
 								<section id="two" class="wrapper style3 fade-up">
 										<div class="inner">
 											<h2>Listar eventos</h2>
+
+										
+										<!--	
+											
+											
 											<form action="fuente/Persistence/cargar.php" method= post name= "cargar">	
 											<div class="field">
 													<label for="date2">Fecha: </label>
 													<input name= "date2" id="date2" type="date" min = "2017-03-17" value = "2017-03-17"></input>
 													
 											</div>
-									
+										
 										<ul class="actions">
 											<li><a href="" class="button submit" >Buscar</a></li>
 										</ul>
+											<br>
+
+										-->
+											
+											<label for="date2">Géneros: </label>
+											<div class="container-a1">
+													<ul class="caption-style-1">
+														<li>
+															<img src="./Caption Hover Animations_files/everycowboy_dribbbleready_shot.jpg" alt="">
+															<div class="caption">
+																<div class="blur"></div>
+																<div class="caption-text">
+																	<h1>Aire Libre</h1>
+																	<p>Haz Clic aqui para listar eventos de Aire Libre!</p>
+																</div>
+															</div>
+														</li>
+														<li>
+															<img src="./Caption Hover Animations_files/chaps_1x.jpg" alt="">
+															<div class="caption">
+																<div class="blur"></div>
+																<div class="caption-text">
+																	<h1>Fiesta</h1>
+																	<p>Haz Clic aqui para listar eventos de Fiesta!</p>
+																</div>
+															</div>
+														</li>														
+														<li>
+															<img src="./Caption Hover Animations_files/ithinkican_01.jpg" alt="">
+															<div class="caption">
+																<div class="blur"></div>
+																<div class="caption-text">
+																	<h1>Películas</h1>
+																	<p>Haz Clic aqui para listar eventos de Películas!</p>
+																</div>
+															</div>
+														</li>
+														<li>
+															<img src="./Caption Hover Animations_files/m.jpg" alt="">
+															<div class="caption">
+																<div class="blur"></div>
+																<div class="caption-text">
+																	<h1>Actividad Física</h1>
+																	<p>Haz Clic aqui para listar eventos de Actividad Física!</p>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+
 									</form>
 								</section>
 
