@@ -1,6 +1,6 @@
 <?php
 
-	if(isset($_POST['desc'])&& isset($_POST['date1'])){
+	if(isset($_POST['desc'])){
 		
 		$description= $_POST['desc'];
 		$date= $_POST['date1'];
