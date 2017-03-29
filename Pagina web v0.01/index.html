@@ -262,18 +262,29 @@ function sendMSJ()
 					<section id="one" class="wrapper style2 spotlights">
 						<div class="inner">
 							<h2>Crear Evento</h2>
-							<p>Introduce la siguiente información para crear tu evento (Lugar, Numero de integrantes y una breve descripción)</p>
+							<p>Introduce la siguiente información para crear tu evento (Lugar, Numero de integrantes y una breve descripción) seguido del usuario y contraseña</p>
 							
 								<section>
 									<form action="fuente/Persistence/guardar.php" method = post name = "formulario">						
 										<div class="field">
+											
 											<label for="desc">Descripción </label>
 											<textarea name="desc" id="desc" rows="5"></textarea>
 										
 										
 											<label for="date1">Fecha: </label>
 											<input name="date1" id="date1" type="datetime-local" min = "2017-03-17T02:01" value =" 2017-03-17T02:01"></input>
-										
+											<br>
+											<TABLE>
+
+									          <TR>
+									            <TD align="left">Nombre de Usuario:</TD><TD align="left"><INPUT type="text" name="username" size="25"></TD>
+									          </TR>
+									          <TR>
+									            <TD align="left">Contraseña:</TD><TD align="left"><INPUT type="password" name="password" size="25" maxlength="10" ></TD>
+									          </TR>
+									        </TABLE>
+
 										</div>
 
 
