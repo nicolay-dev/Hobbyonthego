@@ -267,13 +267,27 @@ function sendMSJ()
 								<section>
 									<form action="fuente/Persistence/guardar.php" method = post name = "formulario">						
 										<div class="field">
-											
+											<label for="nombre">Nombre: </label>
+											<input type="text" name="namedb" id="namedb"></textarea>
+											<br>
+											<label for="integrantes">Maximo de Integrantes: </label>
+											<input type="number" name="integrantes" id="integrantes" min="0" max="20"></textarea>
+											<br>
+
 											<label for="desc">Descripción </label>
 											<textarea name="desc" id="desc" rows="5"></textarea>
 										
 										
 											<label for="date1">Fecha: </label>
 											<input name="date1" id="date1" type="datetime-local" min = "2017-03-17T02:01" value =" 2017-03-17T02:01"></input>
+											<br>
+											<label for="genero">Género: </label>
+											<select name="genero">
+											   <option value="Aire Libre">Aire Libre</option> 
+											   <option value="Fiesta">Fiesta</option> 
+											   <option value="Peliculas">Películas</option>
+											   <option value="Actividad Fisica">Actividad Física</option> 
+											</select>
 											<br>
 											<TABLE>
 
