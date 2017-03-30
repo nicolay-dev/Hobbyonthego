@@ -1,7 +1,11 @@
 general:
   build_dir: Pagina web v0.02
 
+  machine:
+  php:
+    version: 5.4.5
+
 test:
   override:
-    - php test/PUConexion.php --unit-tests
-    - php test/PUDataDB.php --unit-tests
+    - phpunit test/PUConexion.php
+    - phpunit test/PUDataDB.php 
