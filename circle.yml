@@ -1,2 +1,7 @@
 general:
   build_dir: Pagina web v0.02
+
+test:
+  override:
+    - php ./test/PUConexion.php --unit-tests
+    - php ./test/PUDataDB.php --unit-tests
