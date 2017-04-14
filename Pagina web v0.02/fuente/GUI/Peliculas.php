@@ -52,7 +52,7 @@ function realizaProceso(valorCaja1, valorCaja2){
 
 								include '../Persistence/Conexion.php';
 								
-								$conexion= new conexion;
+								$conexion= new Conexion();
 								$data=$conexion->cargarGenero("Peliculas");
 								
 								if($data === false) {

@@ -49,23 +49,25 @@ function realizaProceso(valorCaja1, valorCaja2){
 							<h1>Eventos de Aire Libre:</h1>
 							
 							<?php
-
+								
 								include '../Persistence/Conexion.php';
 								
-								$conexion= new conexion;
+								$conexion = new Conexion();
+
 								$data=$conexion->cargarGenero("Aire Libre");
 								
 								if($data === false) {
+									
 									trigger_error('Wrong SQL: ' . $query . ' Error: ' . $conn->error, E_USER_ERROR);
 								} else {
-									//echo "entre al else";
+									
 									$rows_returned = $data->num_rows;
 								}
 						
 								$data->data_seek(0);
 								//echo "llegue al while";
 								while($row=$data->fetch_assoc()){
-									//echo "entre al while";
+									
 									echo '<br>ID: '.$row['id_event']. '/ Nombre: '.$row['name'].'/  Descripción: ' .$row['descr'].' / fecha: '.$row['fecha'] .'<br>';
 								}
 							?>

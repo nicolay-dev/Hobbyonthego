@@ -11,27 +11,26 @@
 		$integrantes= $_POST['integrantes'];
 
 		$fecha= date("Y-m-d", strtotime("$date"));
-/*		
-		$db = "rfgd_19756503_hobbyonthegoDB";
-		$host = "sql202.rf.gd";
-		$pass = "mtd3pbWo";
+		
+		$db = "rfgd_19756503_HB";
 		$user = "rfgd_19756503";
+		$pass = "mtd3pbWo";
+		$host = "sql202.rf.gd";
 
-*/
 
-
+/*
 		$db = "hobbyonthego";
 		$host = "localhost";
 		$pass = "";
 		$user = "root";
-
+*/
+		
 		$connection= new mysqli($host, $user, $pass, $db) or die ("Error al Conecatar con la base de datos");			
 		$query="select * from USERS 	where name = '$username' AND pass = '$password'";
 		
 		$rs= $connection->query($query);
 		$rs->data_seek(0);
 		
-
 		while($row=$rs->fetch_assoc()){
 
 			$query2="insert INTO EVENTS(name, descr, fecha, genero, max_usuario) VALUES ('$nombre', '$description', '$fecha', '$genero' , $integrantes)";

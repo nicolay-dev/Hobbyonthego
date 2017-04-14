@@ -14,19 +14,23 @@
 		private $pass;
 
 		public function getHost(){
-			$host = "localhost";
+			$host = "sql202.rf.gd";
+			//$host = "localhost";
 			return $host;    
 		}
 		public function getUsername(){
-			$username= "root";
+			$username = "rfgd_19756503";
+			//$username= "root";
 			return $username;    
 		}
 		public function getDB(){
-			$db = "hobbyonthego";
+			$db = "rfgd_19756503_HB";
+			//$db = "hobbyonthego";
 			return $db;    
 		}
 		public function getPass(){
-			$pass = "";
+			$pass = "mtd3pbWo";
+			//$pass = "";
 			return $pass;    
 		}
 	}
