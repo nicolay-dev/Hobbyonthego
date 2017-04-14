@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+
+<!--descripcion(Text area) "desc"
+	fecha (viene con la hora) "date1"
+ -->
+
+<script type="text/javascript">
+/*
+function crearEvento()
+{
+  var date1 = document.getElementById('date1').value;
+  alert(date1);
+}
+
+function validar()
+{
+  var date1 = document.getElementById('date1').value;
+  if(){
+
+  }else{
+
+  }
+  alert(date1);
+}
+function validarFechaMenorActual(){
+	  var date1 = document.getElementById('date1').value;
+      var x = new Date();
+      var fechaC = date1.split("");
+      x.setFullYear(fecha[2],fecha[1]-1,fecha[0]);
+      var today = new Date();
+ 
+      if (x >= today)
+        return false;
+      else
+        return true;
+}
+
+
+function listar()
+{
+  var date2 = document.getElementById('date2').value;
+  alert(date2);
+}
+
+function sendMSJ()
+{
+  
+
+}
+  */
+  
+ </script>
+
+<script>
+ 
+ 
+</script>
+<html lang="en">
+	<head>
+		<meta name="comodo_si_verification" content="20767723" />
+		<title>Hobby on the GO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+ 
+		<script src="https://code.jquery.com/ui/1.8.10/jquery-ui.min.js"></script>	
+
+	</head>
+	<body>
+
+		 
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Home</a></li>
+							<li><a href="#one">Add Event</a></li>
+							<li><a href="#two">Search</a></li>
+							<li><a href="#three">Contact us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Hobby on the GO</h1>
+							<p>Make your favorite Hobbys no matter where and with who...<br />
+							 Just a couple of clicks and find the best plans of the city,<br />
+							 This is Hobby on the GO!.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Make your event NOW!</a></li>
+								<li><a href="index.html" class="button ">Español!</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<div class="inner">
+							<h2>Add Event</h2>
+							<p>Enter the following information to create your event (Place, Number of members and a brief description)</p>
+							
+								<section>
+									<form action="fuente/Persistence/guardar.php" method = post name = "formulario">						
+										<div class="field">
+											<label for="desc">Description </label>
+											<textarea name="desc" id="desc" rows="5"></textarea>
+										
+										
+											<label for="date1">Date: </label>
+											<input name="date1" id="date1" type="datetime-local" min = "2017-03-17T02:01" value =" 2017-03-17T02:01"></input>
+										
+										</div>
+
+
+										<ul class="actions">
+											<li><a href="" class="button submit">Add</a></li>
+										</ul>
+									</form>
+								</section>
+								
+						</div>
+
+				<!-- Two -->
+								<section id="two" class="wrapper style3 fade-up">
+										<div class="inner">
+											<h2>Search events</h2>
+											<form action="fuente/Persistence/cargar.php" method= post name= "cargar">	
+											<div class="field">
+													<label for="date2">Date: </label>
+													<input name= "date2" id="date2" type="date" min = "2017-03-17" value = "2017-03-17"></input>
+													
+											</div>
+									
+										<ul class="actions">
+											<li><a href="" class="button submit" >Search</a></li>
+										</ul>
+									</form>
+								</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Send us a message</h2>
+							<div class="split style1">
+								<section>
+									<form method="post"  action="mailto:Nicolay.JG@Outlook.com">
+										<div class="field half first">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="5"></textarea>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send!</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>Cra 12 #6-30 Int 1<br />
+											Tunja, Boyacá<br />
+											Colombia</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<span">Nicolay.JG@Outlook.com</span><br />
+											<span">Jonathan.Ferrucho@gmail.com</span>
+										</li>
+										<li>
+											<h3>Cell phone</h3>
+											<span>3194902583</span>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Bron System. All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

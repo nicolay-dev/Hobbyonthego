@@ -1,0 +1,33 @@
+CREATE TABLE USERS(
+		id_user			INT	     NOT NULL	AUTO_INCREMENT,	
+		name			VARCHAR(50)  NOT NULL,
+		pass			VARCHAR(50)  NOT NULL,
+
+		CONSTRAINT user_pk_name PRIMARY KEY (id_user)
+);
+
+CREATE TABLE EVENTS(
+		id_event       		INT	  	NOT NULL AUTO_INCREMENT, 
+		name	       		VARCHAR(45)	NOT NULL, 
+		descr			VARCHAR(500)  	NOT NULL,
+		fecha			DATE		NOT NULL,
+		genero			VARCHAR(45)  	NOT NULL,
+		max_usuario		INT		NOT NULL,
+		
+		CONSTRAINT eve_pk_id_event PRIMARY KEY (id_event)
+);
+
+CREATE TABLE PASES(
+		tipo			VARCHAR(1)	NOT NULL,
+		usuario			INT	  	NOT NULL,
+		evento			INT	  	NOT NULL
+);
+
+	
+
+
+ALTER TABLE PASES ADD(
+	CONSTRAINT pas_fk_usuario FOREIGN KEY (usuario) REFERENCES USERS(id_user),
+	CONSTRAINT pas_fk_evento  FOREIGN KEY (evento)  REFERENCES EVENTS(id_event),
+	CONSTRAINT pas_ck_tipo    CHECK (tipo IN ('C'/*CREADOR*/, 'A'/*ASISTENTE*/))
+);
