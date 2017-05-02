@@ -3,9 +3,9 @@ general:
 
   machine:
   php:
-    version: 5.4.5
+    version: 7.0
 
 test:
   override:
-    - php test/PUConexion.php --unit-tests
-    - php test/PUDataDB.php --unit-tests
+    - php Test/PUConexion.php --unit-tests
+    - php Test/PUDataDB.php --unit-tests
