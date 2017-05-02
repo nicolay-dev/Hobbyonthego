@@ -9,9 +9,10 @@ class conxionTest extends PHPUnit_Framework_TestCase{
 		
         $data = new DataDB();
         
-		$expect	ed = "localhost";
+		$expect	ed = 'localhost';
         $actual = $data->getHost();
         $this->assertEquals($expected, $actual);
     }
 	
 }
+?>
