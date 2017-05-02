@@ -1,11 +1,20 @@
-general:
-  build_dir: Pagina web v0.02
+  general:
+    build_dir: Pagina web v0.02
 
+  dependencies:
+    post:
+    -sudo apt-get install pear
+    -sudo pear upgrade pear
+    -sudo pear channel-discover pear.phpunit.de
+    -sudo pear channel-discover components.ez.no
+    -sudo pear channel-discover pear.symfony.com
+    -sudo pear install --alldeps phpunit/PHPunit
+  
   machine:
-  php:
-    version: 7.0
+    php:
+      version: 5.4.5
 
-test:
-  override:
-    - phpunit Test/PUConexion.php 
-    - phpunit Test/PUDataDB.php 
+  test:
+    override:
+      - php test/PUConexion.php --unit-tests
+      - php test/PUDataDB.php --unit-tests
