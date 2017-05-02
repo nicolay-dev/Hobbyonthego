@@ -7,5 +7,5 @@ general:
 
 test:
   override:
-    - php Test/PUConexion.php --unit-tests
-    - php Test/PUDataDB.php --unit-tests
+    - phpunit Test/PUConexion.php 
+    - phpunit Test/PUDataDB.php 
