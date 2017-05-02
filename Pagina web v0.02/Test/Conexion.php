@@ -1,5 +1,5 @@
 <?php
-	include 'dataDB.php';
+	include 'DataDB.php';
 	
 	class conexion{	
 
