@@ -7,9 +7,8 @@
 
   dependencies:
     pre:
-    - composer require "phpunit/phpunit=5.5.*"
-#    - wget https://phar.phpunit.de/phpunit-6.1.phar
-#     - php phpunit-6.1.phar --version
+     - wget https://phar.phpunit.de/phpunit-6.1.phar
+     - php phpunit-6.1.phar --version
 #    pre:
 #      - dir
 #      - cp composer.json /opt/circleci/php/$(phpenv global)/etc/conf.d/
@@ -18,5 +17,5 @@
 
   test:
     override:
-      - phpunit Test/PUConexion.php
+      - php Test/PUConexion.php
 #      - php Test/PUDataDB.php --unit-tests
