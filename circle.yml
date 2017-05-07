@@ -7,7 +7,9 @@
 
   dependencies:
     pre:
-      - cp composer.json
+      - dir
+      - cp composer.json /opt/circleci/php/$(phpenv global)/etc/conf.d/
+      - dir /opt/circleci/php/$(phpenv global)/etc/conf.d/
       - composer update
 
   test:
