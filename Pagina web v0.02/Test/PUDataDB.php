@@ -20,7 +20,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>Hobbyonthego/Conexion.php at new2 · Nicolaysito/Hobbyonthego</title>
+  <title>Hobbyonthego/PUDataDB.php at new2 · Nicolaysito/Hobbyonthego</title>
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
@@ -29,10 +29,10 @@
     <meta content="https://avatars1.githubusercontent.com/u/26149887?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="Nicolaysito/Hobbyonthego" property="og:title" /><meta content="https://github.com/Nicolaysito/Hobbyonthego" property="og:url" /><meta content="Hobbyonthego - Proyecto Electiva 1 (Entregas continuas) aplicación WEB" property="og:description" />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MTcyNjc5MDcwOjQyODY5NjFkMDgzYTRmNDdjZjMzNmFjMTI2MTNjMDE0ZWE2MjZlOWVmMjE5NTc1ZTBmYzZhNjI5YzI0M2ViNjU=--813e7a8c1606439f09c3e6c6aeeffcecb849b37e">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MTcyNjc5MDcwOjA4Nzc3Y2Y5NzRhZjMwYWQ4ZTAzMjM5NDI3YmEzZWEzMWVjNjUwOGUzMTVlYTNkN2E4MTM2MmIxZGU5OTBjMjY=--8b12f351fcc247d1714903ed1ccee57110dd068d">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="FD53:1C715:42DD4CA:6331C41:590F90DD" data-pjax-transient>
+  <meta name="request-id" content="FD5B:1C714:26C01C2:399336E:590F90F5" data-pjax-transient>
   
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
@@ -41,7 +41,7 @@
 <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="FD53:1C715:42DD4CA:6331C41:590F90DD" name="octolytics-dimension-request_id" /><meta content="26149887" name="octolytics-actor-id" /><meta content="Nicolaysito" name="octolytics-actor-login" /><meta content="cfa9b422b42dd56623ceef8cee5a9b1995f621829896ca55172aeee45b3d4ef9" name="octolytics-actor-hash" />
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="FD5B:1C714:26C01C2:399336E:590F90F5" name="octolytics-dimension-request_id" /><meta content="26149887" name="octolytics-actor-id" /><meta content="Nicolaysito" name="octolytics-actor-login" /><meta content="cfa9b422b42dd56623ceef8cee5a9b1995f621829896ca55172aeee45b3d4ef9" name="octolytics-actor-hash" />
 <meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
 
 
@@ -56,7 +56,7 @@
   <meta name="user-login" content="Nicolaysito">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="ZDdiODUwNGY1NTU0MjhlZWRmOThlODIxNWFlNzE0ZjcxMmE2OGM2OTQwM2Y0ZTQyMzk5Y2I0MzQxODk2NmNjZHx7InJlbW90ZV9hZGRyZXNzIjoiMTgxLjUxLjExLjEzMyIsInJlcXVlc3RfaWQiOiJGRDUzOjFDNzE1OjQyREQ0Q0E6NjMzMUM0MTo1OTBGOTBERCIsInRpbWVzdGFtcCI6MTQ5NDE5MjM1NCwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+    <meta name="js-proxy-site-detection-payload" content="YjhjMGQ4MTA3NjA4NjhiNjY2NzRiOWJiMDcxZGQyZTkzMjIwMzgzNDA3ZjhjYmZmMDA3NmU1YWU5NTFiOGNjM3x7InJlbW90ZV9hZGRyZXNzIjoiMTgxLjUxLjExLjEzMyIsInJlcXVlc3RfaWQiOiJGRDVCOjFDNzE0OjI2QzAxQzI6Mzk5MzM2RTo1OTBGOTBGNSIsInRpbWVzdGFtcCI6MTQ5NDE5MjM3NiwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
 
 
   <meta name="html-safe-nonce" content="31c145017cf182829329d8ec3e9c7beacddaa059">
@@ -72,7 +72,7 @@
   <link href="https://github.com/Nicolaysito/Hobbyonthego/commits/new2.atom" rel="alternate" title="Recent Commits to Hobbyonthego:new2" type="application/atom+xml">
 
 
-    <link rel="canonical" href="https://github.com/Nicolaysito/Hobbyonthego/blob/new2/Pagina%20web%20v0.02/Test/Conexion.php" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/Nicolaysito/Hobbyonthego/blob/new2/Pagina%20web%20v0.02/Test/PUDataDB.php" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -114,7 +114,7 @@
         <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
   <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/Nicolaysito/Hobbyonthego/search" class="js-site-search-form" data-scoped-search-url="/Nicolaysito/Hobbyonthego/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
     <label class="form-control header-search-wrapper js-chromeless-input-container">
-        <a href="/Nicolaysito/Hobbyonthego/blob/new2/Pagina%20web%20v0.02/Test/Conexion.php" class="header-search-scope no-underline">This repository</a>
+        <a href="/Nicolaysito/Hobbyonthego/blob/new2/Pagina%20web%20v0.02/Test/PUDataDB.php" class="header-search-scope no-underline">This repository</a>
       <input type="text"
         class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
         data-hotkey="s"
@@ -230,7 +230,7 @@
           Settings
         </a>
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="SzWCUus18GDqr2OHVJSLuXi/wROS0X0vrmDn4OJ7jE1pqoYYGOq4vuscfjxMb2eDlehgKzAOzAfF8M2UJJkrGA==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="iOyd3nzrhsrRMUtRSDJKvn1l30o2Wc2b722/Y33HxYCqc5mUjzTOFNCCVupQyaaEkDJ+cpSGfLOE/ZUXuyVi1Q==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -240,7 +240,7 @@
 </ul>
 
 
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="XsMHpwTSkwtfz4hAYrjWt11tB9nJWNrnVlroPIfpxnR8XAPt9w3b1V58lft6QzqNsDqm4WuHa889ysJIQQthIQ==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="qfKt2/OmiIbooWNlMuBsjbujMgN0wOmllmDdrkVoz+mLbamRAHnAWOkSft4qG4C3VvSTO9YfWI398Pfag4povA==" /></div>
       <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
         Sign out
       </button>
@@ -271,7 +271,7 @@
 
         <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Efeo91hqEm5CqFGPrBXYVhe051Jyrp/oyqW+YeJhczvfCkjKA5BVUelUyAHUHPJ1ibgSnDWmMfVBqmqlwQDmNw==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="84900360" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="GOcUy6oz5UPWUrcu5y/UTtid8IGs662O8ACbMMoUSfXWGvT28cmifH2uLqCfJv5tRpEFT+vjA5N7D0/06XXc+Q==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="84900360" />
 
         <div class="select-menu js-menu-container js-select-menu">
           <a href="/Nicolaysito/Hobbyonthego/subscription"
@@ -346,7 +346,7 @@
 
   <li>
       <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/Nicolaysito/Hobbyonthego/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4QgEqgdqcWZy+fpBYsLx47DLlwi6CtGOf3DoyAIPZv79HNudb+oY80J3lhzFJRR+oDItwVZobI0GmEEUpW02oA==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/Nicolaysito/Hobbyonthego/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="g8tb/aJH9/sIzPeco2IA0IsGxPUfNAQ+YwVIIGk7iK+f34TKyseebjhCm8EEheVNm/9+PPNWuT0a7eH8zlnY8Q==" /></div>
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
@@ -360,7 +360,7 @@
           0
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/Nicolaysito/Hobbyonthego/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="CLcuSxdV7qK6kwy6aGgENplPKDd/dfReGeOFhLnq5iTvfA7J4wiJc9pnex2gxuThQGPU2h52JkTgVGFjG7Z3Vg==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/Nicolaysito/Hobbyonthego/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="RaXPTKGR8gli6QRzHKU4HINelgaA+nQKcAuAWS5ot1Cibu/OVcyV2AIdc9TUC9jLWnJq6+H5phCJvGS+jDQmIg==" /></div>
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
@@ -476,9 +476,9 @@
     
           
 
-<a href="/Nicolaysito/Hobbyonthego/blob/015f903579cf0bc19f123a7e00fac86f795d8861/Pagina%20web%20v0.02/Test/Conexion.php" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+<a href="/Nicolaysito/Hobbyonthego/blob/015f903579cf0bc19f123a7e00fac86f795d8861/Pagina%20web%20v0.02/Test/PUDataDB.php" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
-<!-- blob contrib key: blob_contributors:v21:64787ce5dca49fe8449c226af5f79888 -->
+<!-- blob contrib key: blob_contributors:v21:c889a2dad0fce3624e9c2b736b59a55f -->
 
 <div class="file-navigation js-zeroclipboard-container">
   
@@ -520,7 +520,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/Nicolaysito/Hobbyonthego/blob/ConfigCircleCI/Pagina%20web%20v0.02/Test/Conexion.php"
+               href="/Nicolaysito/Hobbyonthego/blob/ConfigCircleCI/Pagina%20web%20v0.02/Test/PUDataDB.php"
                data-name="ConfigCircleCI"
                data-skip-pjax="true"
                rel="nofollow">
@@ -530,7 +530,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/Nicolaysito/Hobbyonthego/blob/HTML/Pagina%20web%20v0.02/Test/Conexion.php"
+               href="/Nicolaysito/Hobbyonthego/blob/HTML/Pagina%20web%20v0.02/Test/PUDataDB.php"
                data-name="HTML"
                data-skip-pjax="true"
                rel="nofollow">
@@ -540,7 +540,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/Nicolaysito/Hobbyonthego/blob/Optimizaci%C3%B3nNicolay/Pagina%20web%20v0.02/Test/Conexion.php"
+               href="/Nicolaysito/Hobbyonthego/blob/Optimizaci%C3%B3nNicolay/Pagina%20web%20v0.02/Test/PUDataDB.php"
                data-name="OptimizaciónNicolay"
                data-skip-pjax="true"
                rel="nofollow">
@@ -550,7 +550,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/Nicolaysito/Hobbyonthego/blob/PHP/Pagina%20web%20v0.02/Test/Conexion.php"
+               href="/Nicolaysito/Hobbyonthego/blob/PHP/Pagina%20web%20v0.02/Test/PUDataDB.php"
                data-name="PHP"
                data-skip-pjax="true"
                rel="nofollow">
@@ -560,7 +560,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/Nicolaysito/Hobbyonthego/blob/master/Pagina%20web%20v0.02/Test/Conexion.php"
+               href="/Nicolaysito/Hobbyonthego/blob/master/Pagina%20web%20v0.02/Test/PUDataDB.php"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -570,7 +570,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/Nicolaysito/Hobbyonthego/blob/new2/Pagina%20web%20v0.02/Test/Conexion.php"
+               href="/Nicolaysito/Hobbyonthego/blob/new2/Pagina%20web%20v0.02/Test/PUDataDB.php"
                data-name="new2"
                data-skip-pjax="true"
                rel="nofollow">
@@ -581,7 +581,7 @@
             </a>
         </div>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/Nicolaysito/Hobbyonthego/branches" class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="BDKUJNbj6nk6GFRTgD3kwzhvy/OFCFLz+l8isrYVPzzjTSWEFP+eJwVjw9XgaUwSnPxYFOetU4T+OXnagHHERA==" /></div>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/Nicolaysito/Hobbyonthego/branches" class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="x108X9DTLrSdFAwI2IDPOLoK5zwZH2xnNwt0jxpSugEgIo3/Es9a6qJvm4641GfpHpl023u6bRAzbS/nLDZBeQ==" /></div>
           <svg aria-hidden="true" class="octicon octicon-git-branch select-menu-item-icon" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
             <div class="select-menu-item-text">
               <span class="select-menu-item-heading">Create branch: <span class="js-new-item-name"></span></span>
@@ -589,7 +589,7 @@
             </div>
             <input type="hidden" name="name" id="name" class="js-new-item-value">
             <input type="hidden" name="branch" id="branch" value="new2">
-            <input type="hidden" name="path" id="path" value="Pagina%20web%20v0.02/Test/Conexion.php">
+            <input type="hidden" name="path" id="path" value="Pagina%20web%20v0.02/Test/PUDataDB.php">
 </form>
       </div>
 
@@ -616,12 +616,12 @@
     <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
   </div>
   <div class="breadcrumb js-zeroclipboard-target">
-    <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/Nicolaysito/Hobbyonthego/tree/new2"><span>Hobbyonthego</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/Nicolaysito/Hobbyonthego/tree/new2/Pagina%20web%20v0.02"><span>Pagina web v0.02</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/Nicolaysito/Hobbyonthego/tree/new2/Pagina%20web%20v0.02/Test"><span>Test</span></a></span><span class="separator">/</span><strong class="final-path">Conexion.php</strong>
+    <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/Nicolaysito/Hobbyonthego/tree/new2"><span>Hobbyonthego</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/Nicolaysito/Hobbyonthego/tree/new2/Pagina%20web%20v0.02"><span>Pagina web v0.02</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/Nicolaysito/Hobbyonthego/tree/new2/Pagina%20web%20v0.02/Test"><span>Test</span></a></span><span class="separator">/</span><strong class="final-path">PUDataDB.php</strong>
   </div>
 </div>
 
 
-<include-fragment class="commit-tease" src="/Nicolaysito/Hobbyonthego/contributors/new2/Pagina%20web%20v0.02/Test/Conexion.php">
+<include-fragment class="commit-tease" src="/Nicolaysito/Hobbyonthego/contributors/new2/Pagina%20web%20v0.02/Test/PUDataDB.php">
   <div>
     Fetching contributors&hellip;
   </div>
@@ -636,24 +636,24 @@
   <div class="file-actions">
 
     <div class="BtnGroup">
-      <a href="/Nicolaysito/Hobbyonthego/raw/new2/Pagina%20web%20v0.02/Test/Conexion.php" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
-        <a href="/Nicolaysito/Hobbyonthego/blame/new2/Pagina%20web%20v0.02/Test/Conexion.php" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
-      <a href="/Nicolaysito/Hobbyonthego/commits/new2/Pagina%20web%20v0.02/Test/Conexion.php" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+      <a href="/Nicolaysito/Hobbyonthego/raw/new2/Pagina%20web%20v0.02/Test/PUDataDB.php" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/Nicolaysito/Hobbyonthego/blame/new2/Pagina%20web%20v0.02/Test/PUDataDB.php" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/Nicolaysito/Hobbyonthego/commits/new2/Pagina%20web%20v0.02/Test/PUDataDB.php" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
     </div>
 
         <a class="btn-octicon tooltipped tooltipped-nw"
-           href="github-windows://openRepo/https://github.com/Nicolaysito/Hobbyonthego?branch=new2&amp;filepath=Pagina%20web%20v0.02%2FTest%2FConexion.php"
+           href="github-windows://openRepo/https://github.com/Nicolaysito/Hobbyonthego?branch=new2&amp;filepath=Pagina%20web%20v0.02%2FTest%2FPUDataDB.php"
            aria-label="Open this file in GitHub Desktop"
            data-ga-click="Repository, open with desktop, type:windows">
             <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
         </a>
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/Nicolaysito/Hobbyonthego/edit/new2/Pagina%20web%20v0.02/Test/Conexion.php" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="i2CSpLQ1XA+XaKP+o8Z1wrJXtAjXgj6BbIyTWBvXDMGND345sZVOn7OGCVph9asn58TlNTv0ZAwMpcRzj/nnKw==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/Nicolaysito/Hobbyonthego/edit/new2/Pagina%20web%20v0.02/Test/PUDataDB.php" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="c9E916k6vZ0f2U4dAz77Hd/b97Xdw/VIZYScRurKyOhHC/PIezRiwfMzZ5l4vfd6a3W6Dzvsmdefl8TEv2+qVw==" /></div>
           <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
             aria-label="Edit this file" data-hotkey="e" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
           </button>
-</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/Nicolaysito/Hobbyonthego/delete/new2/Pagina%20web%20v0.02/Test/Conexion.php" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Xkip/74QKH33XNHUnLol7SgDSgEUmATk6Oa7/JY2YoRmNXyh2n/pDYckWYRPRp650zjKvNCaug+iLjlpZ6x/pA==" /></div>
+</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/Nicolaysito/Hobbyonthego/delete/new2/Pagina%20web%20v0.02/Test/PUDataDB.php" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="36qFaiA5MY/wREGBkgOhUZ/30j7Yodigz7xH0BHj1ZN4eRSTnHfHZ8z4q+JrTAZxoKdXKDPD2qeCrpJGOV9bAw==" /></div>
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Delete this file" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -661,9 +661,9 @@
 </form>  </div>
 
   <div class="file-info">
-      33 lines (26 sloc)
+      44 lines (29 sloc)
       <span class="file-info-divider"></span>
-    1012 Bytes
+    853 Bytes
   </div>
 </div>
 
@@ -677,15 +677,15 @@
       </tr>
       <tr>
         <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">	<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&#39;</span>DataDB.php<span class="pl-pds">&#39;</span></span>;</span></td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"></span></td>
       </tr>
       <tr>
         <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">	</span></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"><span class="pl-k">include_once</span> <span class="pl-s"><span class="pl-pds">&quot;</span>DataDB.php<span class="pl-pds">&quot;</span></span>;</span></td>
       </tr>
       <tr>
         <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
-        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">	<span class="pl-k">class</span> <span class="pl-en">conexion</span>{	</span></td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"></span></td>
       </tr>
       <tr>
         <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
@@ -693,115 +693,159 @@
       </tr>
       <tr>
         <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">		<span class="pl-k">function</span> <span class="pl-en">guardar</span>(<span class="pl-smi">$desc</span>, <span class="pl-smi">$date1</span>){   </span></td>
+        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"><span class="pl-k">class</span> <span class="pl-en">dataDBTest</span> <span class="pl-k">extends</span> <span class="pl-e">PHPUnit_Framework_TestCase</span>{</span></td>
       </tr>
       <tr>
         <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
-        <td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-smi">$dataDB</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">dataDB</span>;	</span></td>
+        <td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">	</span></td>
       </tr>
       <tr>
         <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
-        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-smi">$connection</span><span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">mysqli</span>(<span class="pl-smi">$dataDB</span><span class="pl-k">-&gt;</span>getHost(), <span class="pl-smi">$dataDB</span><span class="pl-k">-&gt;</span>getUsername(), <span class="pl-smi">$dataDB</span><span class="pl-k">-&gt;</span>getPass(), <span class="pl-smi">$dataDB</span><span class="pl-k">-&gt;</span>getDB()) <span class="pl-k">or</span> <span class="pl-k">die</span> (<span class="pl-s"><span class="pl-pds">&quot;</span>Error al Conecatar con la base de datos<span class="pl-pds">&quot;</span></span>);			</span></td>
+        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">    <span class="pl-k">public</span> <span class="pl-k">function</span> <span class="pl-en">testHost</span>() {</span></td>
       </tr>
       <tr>
         <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
-        <td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-smi">$query</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-s1"><span class="pl-k">INSERT INTO</span> EVENT (descr,fecha,usuario) <span class="pl-k">VALUES</span> (<span class="pl-s">&#39;<span class="pl-smi">$desc</span>&#39;</span>,<span class="pl-s">&#39;<span class="pl-smi">$date1</span>&#39;</span>,<span class="pl-c1">1</span>);</span><span class="pl-pds">&quot;</span></span>;</span></td>
+        <td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">		</span></td>
       </tr>
       <tr>
         <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
-        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-smi">$rs</span><span class="pl-k">=</span> <span class="pl-smi">$connection</span><span class="pl-k">-&gt;</span>query(<span class="pl-smi">$query</span>);</span></td>
+        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        <span class="pl-smi">$data</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">DataDB</span>();</span></td>
       </tr>
       <tr>
         <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
-        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">		}</span></td>
+        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        </span></td>
       </tr>
       <tr>
         <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
-        <td id="LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">		</span></td>
+        <td id="LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">		<span class="pl-smi">$expected</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>localhost<span class="pl-pds">&quot;</span></span>;</span></td>
       </tr>
       <tr>
         <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">		<span class="pl-k">function</span> <span class="pl-en">cargar</span>(<span class="pl-smi">$fecha_inicio</span>){</span></td>
+        <td id="LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        <span class="pl-smi">$actual</span> <span class="pl-k">=</span> <span class="pl-smi">$data</span><span class="pl-k">-&gt;</span>getHost();</span></td>
       </tr>
       <tr>
         <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
-        <td id="LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">				</span></td>
+        <td id="LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        <span class="pl-smi">$this</span><span class="pl-k">-&gt;</span>assertEquals(<span class="pl-smi">$expected</span>, <span class="pl-smi">$actual</span>);</span></td>
       </tr>
       <tr>
         <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
-        <td id="LC15" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-smi">$fecha</span><span class="pl-k">=</span> <span class="pl-c1">date</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>Y-m-d<span class="pl-pds">&quot;</span></span>, <span class="pl-c1">strtotime</span>(<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-smi">$fecha_inicio</span><span class="pl-pds">&quot;</span></span>));</span></td>
+        <td id="LC15" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">    }</span></td>
       </tr>
       <tr>
         <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
-        <td id="LC16" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-c1">echo</span> <span class="pl-smi">$fecha</span><span class="pl-k">.</span><span class="pl-s"><span class="pl-pds">&quot;</span>&lt;br&gt;<span class="pl-pds">&quot;</span></span>;</span></td>
+        <td id="LC16" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">	</span></td>
       </tr>
       <tr>
         <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
-        <td id="LC17" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"></span></td>
+        <td id="LC17" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">	 <span class="pl-k">public</span> <span class="pl-k">function</span> <span class="pl-en">testUsername</span>() {</span></td>
       </tr>
       <tr>
         <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
-        <td id="LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-c"><span class="pl-c">/*</span>echo $date-&gt;format(&#39;Y-m-d&#39;);<span class="pl-c">*/</span></span></span></td>
+        <td id="LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">		</span></td>
       </tr>
       <tr>
         <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
-        <td id="LC19" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-c"><span class="pl-c">/*</span>echo $_PO0ST[&#39;date2&#39;];<span class="pl-c">*/</span></span></span></td>
+        <td id="LC19" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        <span class="pl-smi">$data</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">DataDB</span>();</span></td>
       </tr>
       <tr>
         <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
-        <td id="LC20" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-c"><span class="pl-c">//</span>$query=&quot;select * from EVENT where fecha=&#39;$fecha&#39;;&quot;;</span></span></td>
+        <td id="LC20" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        </span></td>
       </tr>
       <tr>
         <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
-        <td id="LC21" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-c"><span class="pl-c">//</span>realiza consulta1</span></span></td>
+        <td id="LC21" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">		<span class="pl-smi">$expected</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>root<span class="pl-pds">&quot;</span></span>;</span></td>
       </tr>
       <tr>
         <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
-        <td id="LC22" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			</span></td>
+        <td id="LC22" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        <span class="pl-smi">$actual</span> <span class="pl-k">=</span> <span class="pl-smi">$data</span><span class="pl-k">-&gt;</span>getUsername();</span></td>
       </tr>
       <tr>
         <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
-        <td id="LC23" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-smi">$query</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>begin dbms_output.put_line(&#39;prueba de pl&#39;); end<span class="pl-pds">&quot;</span></span>;</span></td>
+        <td id="LC23" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        <span class="pl-smi">$this</span><span class="pl-k">-&gt;</span>assertEquals(<span class="pl-smi">$expected</span>, <span class="pl-smi">$actual</span>);</span></td>
       </tr>
       <tr>
         <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
-        <td id="LC24" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			</span></td>
+        <td id="LC24" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">    }</span></td>
       </tr>
       <tr>
         <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
-        <td id="LC25" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-c1">echo</span> <span class="pl-smi">$query</span>;</span></td>
+        <td id="LC25" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">	</span></td>
       </tr>
       <tr>
         <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
-        <td id="LC26" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-smi">$dataDB</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">dataDB</span>;	</span></td>
+        <td id="LC26" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">	 <span class="pl-k">public</span> <span class="pl-k">function</span> <span class="pl-en">testDB</span>() {</span></td>
       </tr>
       <tr>
         <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
-        <td id="LC27" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-smi">$connection</span><span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">mysqli</span>(<span class="pl-smi">$dataDB</span><span class="pl-k">-&gt;</span>getHost(), <span class="pl-smi">$dataDB</span><span class="pl-k">-&gt;</span>getUsername(), <span class="pl-smi">$dataDB</span><span class="pl-k">-&gt;</span>getPass(), <span class="pl-smi">$dataDB</span><span class="pl-k">-&gt;</span>getDB()) <span class="pl-k">or</span> <span class="pl-k">die</span> (<span class="pl-s"><span class="pl-pds">&quot;</span>Error al Conecatar con la base de datos<span class="pl-pds">&quot;</span></span>);</span></td>
+        <td id="LC27" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">		</span></td>
       </tr>
       <tr>
         <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
-        <td id="LC28" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-smi">$rs</span><span class="pl-k">=</span> <span class="pl-smi">$connection</span><span class="pl-k">-&gt;</span>query(<span class="pl-smi">$query</span>);</span></td>
+        <td id="LC28" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        <span class="pl-smi">$data</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">DataDB</span>();</span></td>
       </tr>
       <tr>
         <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
-        <td id="LC29" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-c1">echo</span> <span class="pl-smi">$rs</span>;</span></td>
+        <td id="LC29" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        </span></td>
       </tr>
       <tr>
         <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
-        <td id="LC30" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">			<span class="pl-k">return</span> <span class="pl-smi">$rs</span>;</span></td>
+        <td id="LC30" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">		<span class="pl-smi">$expected</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>hobby<span class="pl-pds">&quot;</span></span>;</span></td>
       </tr>
       <tr>
         <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
-        <td id="LC31" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">		}	</span></td>
+        <td id="LC31" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        <span class="pl-smi">$actual</span> <span class="pl-k">=</span> <span class="pl-smi">$data</span><span class="pl-k">-&gt;</span>getDB();</span></td>
       </tr>
       <tr>
         <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
-        <td id="LC32" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">	}</span></td>
+        <td id="LC32" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        <span class="pl-smi">$this</span><span class="pl-k">-&gt;</span>assertEquals(<span class="pl-smi">$expected</span>, <span class="pl-smi">$actual</span>);</span></td>
       </tr>
       <tr>
         <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
-        <td id="LC33" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"></span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></td>
+        <td id="LC33" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">    }</span></td>
+      </tr>
+      <tr>
+        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="LC34" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">	</span></td>
+      </tr>
+      <tr>
+        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="LC35" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">	 <span class="pl-k">public</span> <span class="pl-k">function</span> <span class="pl-en">testPass</span>() {</span></td>
+      </tr>
+      <tr>
+        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="LC36" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">		</span></td>
+      </tr>
+      <tr>
+        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="LC37" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        <span class="pl-smi">$data</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">DataDB</span>();</span></td>
+      </tr>
+      <tr>
+        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="LC38" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        </span></td>
+      </tr>
+      <tr>
+        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="LC39" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">		<span class="pl-smi">$expected</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>;</span></td>
+      </tr>
+      <tr>
+        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="LC40" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        <span class="pl-smi">$actual</span> <span class="pl-k">=</span> <span class="pl-smi">$data</span><span class="pl-k">-&gt;</span>getPass();</span></td>
+      </tr>
+      <tr>
+        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="LC41" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        <span class="pl-smi">$this</span><span class="pl-k">-&gt;</span>assertEquals(<span class="pl-smi">$expected</span>, <span class="pl-smi">$actual</span>);</span></td>
+      </tr>
+      <tr>
+        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="LC42" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">    }</span></td>
+      </tr>
+      <tr>
+        <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="LC43" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">}</span></td>
+      </tr>
+      <tr>
+        <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="LC44" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"></span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></td>
       </tr>
 </table>
 
@@ -842,7 +886,7 @@
       <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
 </a>
     <ul class="site-footer-links">
-      <li>&copy; 2017 <span title="0.10618s from github-fe148-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2017 <span title="0.15525s from github-fe-134ed95.cp1-iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
