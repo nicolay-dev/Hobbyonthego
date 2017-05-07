@@ -1,12 +1,9 @@
 <?php
 
-/*require_once 'PHPUnit/Autoload.php';*/
+require_once 'PHPUnit/Autoload.php';
 include_once "DataDB.php";
 
-namespace Test;
-use PHPUnit\Framework\TestCase;
-
-class dataDBTest extends TestCase{
+class dataDBTest extends PHPUnit_Framework_TestCase{
   
     public function testHost() {
     
