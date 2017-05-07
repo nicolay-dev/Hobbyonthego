@@ -2,7 +2,7 @@
 
 namespace Test;
 use PHPUnit\Framework\TestCase;
-require_once 'PHPUnit/Autoload.php';
+/*require_once 'PHPUnit/Autoload.php';*/
 /*include_once "Conexion.php";*/
 
 class conxionTest extends TestCase{
