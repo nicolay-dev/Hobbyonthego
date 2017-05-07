@@ -8,6 +8,7 @@
   dependencies:
     pre:
       - cp composer.json
+      - composer update
 
   test:
     override:
