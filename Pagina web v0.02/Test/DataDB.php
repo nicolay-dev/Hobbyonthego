@@ -13,8 +13,8 @@
     private $db;
     private $pass;
 
-    public function DataDB(){
-      
+    public DataDB(){
+
     }
 
     public function getHost(){
