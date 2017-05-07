@@ -1,4 +1,5 @@
 <?php
+require_once 'PHPUnit/Autoload.php';
 include_once "Conexion.php";
 class conxionTest extends PHPUnit_Framework_TestCase{
   
