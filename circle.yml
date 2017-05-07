@@ -15,4 +15,4 @@
   test:
     override:
       - php Test/PUConexion.php --unit-tests
-      - php Test/PUDataDB.php --unit-tests
+#      - php Test/PUDataDB.php --unit-tests
