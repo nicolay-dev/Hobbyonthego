@@ -12,6 +12,11 @@
     private $username;
     private $db;
     private $pass;
+
+    public function DataDB(){
+      
+    }
+
     public function getHost(){
       $host = "localhost";
       return $host;    
