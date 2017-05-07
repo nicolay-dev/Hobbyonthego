@@ -14,5 +14,5 @@
 
   test:
     override:
-      - php test/PUConexion.php --unit-tests
-      - php test/PUDataDB.php --unit-tests
+      - php /test/PUConexion.php --unit-tests
+      - php /test/PUDataDB.php --unit-tests
