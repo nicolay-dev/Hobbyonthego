@@ -7,14 +7,13 @@
 
   dependencies:
     pre:
-    - wget https://phar.phpunit.de/phpunit-5.6.2.phar
-    - chmod +x phpunit-5.6.2.phar
-    - mv phpunit-5.6.2.phar phpunit
+     - wget https://phar.phpunit.de/phpunit-6.1.phar
+     - php phpunit-6.1.phar --version
 #    pre:
 #      - dir
 #      - cp composer.json /opt/circleci/php/$(phpenv global)/etc/conf.d/
 #      - dir /opt/circleci/php/$(phpenv global)/etc/conf.d/
-      - composer update
+#    - composer update
 
   test:
     override:
