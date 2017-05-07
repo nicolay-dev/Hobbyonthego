@@ -8,6 +8,7 @@
   dependencies:
     pre:
 
+
       composer require "phpunit/phpunit=5.5.*"
   #   - wget https://phar.phpunit.de/phpunit-6.1.phar
    #  - php phpunit-6.1.phar --version
