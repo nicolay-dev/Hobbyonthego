@@ -21,4 +21,4 @@
   test:
     override:
       - phpunit Test/PUConexion.php
-#      - php Test/PUDataDB.php --unit-tests
+      - phpunit Test/PUDataDB.php

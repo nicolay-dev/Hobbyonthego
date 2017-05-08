@@ -3,7 +3,6 @@
 namespace Test;
 use PHPUnit\Framework\TestCase;
 /*require_once 'PHPUnit/Autoload.php';*/
-include_once "Conexion.php";
 include_once "DataDB.php";
 
 class conexionTest extends TestCase{
