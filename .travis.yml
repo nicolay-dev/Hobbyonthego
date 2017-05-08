@@ -2,7 +2,7 @@ language: php
 php:
    - '7.0.11'
 
-script: phpunit Test/PUDataDB.php
+script: phpunit Pagina web v0.02/Test/PUDataDB.php
 deploy:
   skip_cleanup: true
   
