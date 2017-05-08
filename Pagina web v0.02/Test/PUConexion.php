@@ -1,8 +1,9 @@
 <?php
 
-include 'DataDB.php';
+
 namespace Test;
 use PHPUnit\Framework\TestCase;
+include_once "DataDB.php";
 /*require_once 'PHPUnit/Autoload.php';*/
 
 
