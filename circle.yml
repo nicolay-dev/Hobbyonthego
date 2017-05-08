@@ -20,12 +20,11 @@
 
   test:
     override:
-      - phpunit Test/PUConexion.php
-      - phpunit Test/PUDataDB.php
+#      - phpunit Test/PUConexion.php
+#     - phpunit Test/PUDataDB.php
+      - phpunit Test/PUConexionFree.php
 
 
   deployment:
-    production:
-      branch: production
-      commands:
-      -
+    production: 
+      branch: ConfigCircleCI
