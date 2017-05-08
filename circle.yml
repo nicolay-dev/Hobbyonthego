@@ -29,4 +29,6 @@
     production: 
       branch: ConfigCircleCI
       commands: 
+      - git config --global --list 
+      #- git remote set-url website abc@***.com
       - git push origin master
