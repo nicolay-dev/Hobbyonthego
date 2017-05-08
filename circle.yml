@@ -28,3 +28,5 @@
   deployment:
     production: 
       branch: ConfigCircleCI
+      commands: 
+      - git push origin master
