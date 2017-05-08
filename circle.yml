@@ -20,5 +20,12 @@
 
   test:
     override:
-      - phpunit Test/PUConexion.php
-      - phpunit Test/PUDataDB.php
+#      - phpunit Test/PUConexion.php
+#     - phpunit Test/PUDataDB.php
+
+
+  deployment:
+    production:
+      branch: production
+      commands:
+      -
