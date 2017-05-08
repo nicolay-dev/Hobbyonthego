@@ -28,9 +28,8 @@
   deployment:
     production: 
       branch: ConfigCircleCI
-      #commands: 
-      heroku:
-      appname: hoobyonthegogithub
+      commands: 
+      - git push git@heroku.com:hoobyonthego.git $CIRCLE_SHA1:master
       #- ./merge_to_master.sh
       #- ls -al ~/.ssh
       #- ssh-keygen -t rsa -b 4096 -C "Nicolay.JG@Outlook.com" | \n | \n
@@ -38,3 +37,6 @@
       #- git remote -v
       #- git remote set-url website abc@***.com
       #- git push origin master
+      #heroku:
+      #appname: hoobyonthegogithub
+      
