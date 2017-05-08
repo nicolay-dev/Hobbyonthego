@@ -4,7 +4,7 @@
 
 namespace Test;
 use PHPUnit\Framework\TestCase;
-include_once "DataDB.php";
+include 'DataDB.php';
 
 
 

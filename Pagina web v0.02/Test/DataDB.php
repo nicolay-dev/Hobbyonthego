@@ -13,10 +13,6 @@
     private $db;
     private $pass;
 
-    function __construct() {
-     
-    }
-
     public function getHost(){
       $host = "localhost";
       return $host;    
