@@ -13,6 +13,10 @@
     private $db;
     private $pass;
 
+    public function DatDB(){
+      
+    }
+
     public function getHost(){
       $host = "localhost";
       return $host;    
