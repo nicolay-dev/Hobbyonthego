@@ -9,10 +9,10 @@ class conexionTest extends TestCase{
   
     public function testHost() {
     
-        $data = new DataDB();
+        $d = new DataDB();
         
     $expect = 'localhost';
-        $actual = $data->getHost();
+        $actual = $d->getHost();
         $this->assertEquals($expected, $actual);
     }
   
