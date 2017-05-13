@@ -30,9 +30,9 @@
       branch: ConfigCircleCI
       commands: 
       - ls -al ~/.ssh
-      - cat .ssh/authorized_keys
-      - cat .ssh/build_key.rsa
-      - cat .ssh/id_circleci_github
+      - cat -al ~/.ssh/authorized_keys
+      - cat -al ~/.ssh/build_key.rsa
+      - cat -al ~/.ssh/id_circleci_github
       #- git push git@heroku.com:hoobyonthego.git $CIRCLE_SHA1:master
       #- ./merge_to_master.sh
       #- ls -al ~/.ssh
