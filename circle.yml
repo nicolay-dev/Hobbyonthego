@@ -29,7 +29,7 @@
     production: 
       branch: ConfigCircleCI
       commands: 
-      -dir .ssh/id_rsa.pub
+      - ls -al ~/.ssh
       - cat .ssh/id_rsa.pub
       #- git push git@heroku.com:hoobyonthego.git $CIRCLE_SHA1:master
       #- ./merge_to_master.sh
