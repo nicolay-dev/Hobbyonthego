@@ -32,7 +32,7 @@
       
       #- cat  ~/.ssh/authorized_keys
       #- cat  ~/.ssh/build_key.rsa
-      - ssh-keygen -t dsa
+      - ssh-keygen -t dsa |||
       - ls -al ~/.ssh
       - cat  ~/.ssh/id_circleci_github
       - cat  ~/.ssh/id_heroku.com
