@@ -29,9 +29,8 @@
     production: 
       branch: ConfigCircleCI
       commands: 
-      - ssh-keygen -t rsa -C "Nicolay.JG@outlook.com.com"
-      - git push git@heroku.com:hoobyonthego.git $CIRCLE_SHA1:master
-      - nano ~/.ssh/id_rsa.pub
+      
+      #- git push git@heroku.com:hoobyonthego.git $CIRCLE_SHA1:master
       #- ./merge_to_master.sh
       #- ls -al ~/.ssh
       #- ssh-keygen -t rsa -b 4096 -C "Nicolay.JG@Outlook.com" | \n | \n
