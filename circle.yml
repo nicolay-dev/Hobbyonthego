@@ -22,9 +22,9 @@
     override:
 #      - phpunit Test/PUConexion.php
 #     - phpunit Test/PUDataDB.php
-=======
+
       - php Test/PUConexionFree.php
->>>>>>> ConfigCircleCI
+
 
 
   deployment:
