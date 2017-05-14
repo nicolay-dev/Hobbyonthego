@@ -1,10 +1,11 @@
 <?php
 
 namespace Test;
-require_once 'vendor/Autoload.php';
+/*require_once 'vendor/Autoload.php';*/
 use PHPUnit\Framework\TestCase;
+use Test\DataDB;
 include_once 'DataDB.php';
-/*require_once 'PHPUnit/Autoload.php';*/
+require_once 'PHPUnit/Autoload.php';
 
 
 class PUConexion extends TestCase{
