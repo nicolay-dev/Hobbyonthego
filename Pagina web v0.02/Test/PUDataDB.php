@@ -5,6 +5,7 @@
 namespace Test;
 require_once 'vendor/Autoload.php';
 use PHPUnit\Framework\TestCase;
+use Test\DataDB;
 #include_once 'DataDB.php';
 
 

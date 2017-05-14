@@ -6,6 +6,8 @@
   $_DB = "rfgd_19756503_hobbyonthegoDB";
   $_PASS = "mtd3pbWo";
   */
+namespace Test;
+
  class DataDB{
     
     private $host;  
