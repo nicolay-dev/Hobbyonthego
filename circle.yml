@@ -45,7 +45,8 @@
 
       #- git remote -v
       #- git remote set-url website abc@***.com
-      
+      - git config --global user.email "Nicolay.JG@outlook.com"
+      - git config --global user.name "Nicolay"
       - git checkout master
       - git branch
       - git reset --hard origin/master
