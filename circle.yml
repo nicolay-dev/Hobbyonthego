@@ -45,8 +45,10 @@
 
       #- git remote -v
       #- git remote set-url website abc@***.com
+      
       - git checkout master
       - git branch
+      - git reset --hard origin/master
       - git merge ConfigCircleCI
       - git commit -a -m 'Merge desde rama ConfigCircleCI'
       - git push origin/master
