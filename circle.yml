@@ -35,10 +35,10 @@
       #- cat  ~/.ssh/authorized_keys
       #- cat  ~/.ssh/build_key.rsa
       #- ssh-keygen -t dsa
-      - ls -al ~/.ssh
-      - cat  ~/.ssh/id_circleci_github
-      - cat  ~/.ssh/id_heroku.com
-      - cat  ~/.ssh/id_heroku.com.pub
+      #- ls -al ~/.ssh
+      #- cat  ~/.ssh/id_circleci_github
+      #- cat  ~/.ssh/id_heroku.com
+      #- cat  ~/.ssh/id_heroku.com.pub
 
       #- git push git@heroku.com:hoobyonthego.git $CIRCLE_SHA1:master
       #- ./merge_to_master.sh
@@ -47,7 +47,15 @@
 
       #- git remote -v
       #- git remote set-url website abc@***.com
-      - git push origin master
+      - git config --global user.email "Nicolay.JG@outlook.com"
+      - git config --global user.name "Nicolay"
+      - git checkout master
+      - git branch
+      - git reset --hard origin/master
+      - git merge ConfigCircleCI
+      - git commit -a -m 'Merge desde rama ConfigCircleCI'
+      - git push origin/master
       #heroku:
       #appname: hoobyonthegogithub
-      
+      #lasldaskdkals
+      #lasldaskdkals
