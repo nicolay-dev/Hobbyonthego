@@ -22,10 +22,32 @@
     override:
 #      - phpunit Test/PUConexion.php
 #     - phpunit Test/PUDataDB.php
+=======
+      - php Test/PUConexionFree.php
+>>>>>>> ConfigCircleCI
 
 
   deployment:
-    production:
-      branch: production
-      commands:
-      -
+    production: 
+      branch: ConfigCircleCI
+      commands: 
+      
+      #- cat  ~/.ssh/authorized_keys
+      #- cat  ~/.ssh/build_key.rsa
+      #- ssh-keygen -t dsa
+      - ls -al ~/.ssh
+      - cat  ~/.ssh/id_circleci_github
+      - cat  ~/.ssh/id_heroku.com
+      - cat  ~/.ssh/id_heroku.com.pub
+
+      #- git push git@heroku.com:hoobyonthego.git $CIRCLE_SHA1:master
+      #- ./merge_to_master.sh
+      #- ls -al ~/.ssh
+      #- ssh-keygen -t rsa -b 4096 -C "Nicolay.JG@Outlook.com" | \n | \n
+
+      #- git remote -v
+      #- git remote set-url website abc@***.com
+      - git push origin master
+      #heroku:
+      #appname: hoobyonthegogithub
+      
