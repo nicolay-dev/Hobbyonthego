@@ -53,10 +53,10 @@
       - git branch
       - git reset --hard origin/master
       - git merge ConfigCircleCI -m "Merge"
-      - git commit -a -m 'Merge desde rama ConfigCircleCI'
       - git push origin master
       #heroku:
       #appname: hoobyonthegogithub
+      #lasldaskdkals
       #lasldaskdkals
       #lasldaskdkals
       #lasldaskdkals
