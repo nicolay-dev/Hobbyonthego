@@ -21,6 +21,10 @@
   test:
     override:
 #    - phpunit Test/
+    - dir 
+    - dir ..
+    - dir -a Test
+    - dir -a 
     - phpunit Test/PUConexion.php
     - phpunit Test/PUDataDB.php
 
@@ -48,8 +52,7 @@
 
       #- git remote -v
       #- git remote set-url website abc@***.com
-      - dir 
-      - dir ..
+
       - git config --global user.email "Nicolay.JG@outlook.com"
       - git config --global user.name "Nicolay"
       - git checkout master

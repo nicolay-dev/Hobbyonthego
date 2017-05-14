@@ -4,8 +4,9 @@ namespace Test;
 use PHPUnit\Framework\TestCase;
 #use Test\DataDB;
 include_once "/Test/DataDB.php";
+include_once "Test/DataDB.php";
 
-class dataDBTest extends TestCase{
+class PUDataDB extends TestCase{
   
     public function testHost() {
     
