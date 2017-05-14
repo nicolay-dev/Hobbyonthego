@@ -2,7 +2,7 @@
 namespace Test;
 /*require_once 'vendor/Autoload.php';*/
 use PHPUnit\Framework\TestCase;
-#use Test\DataDB;
+use Test\DataDB;
 include_once "/Test/DataDB.php";
 include_once "Test/DataDB.php";
 

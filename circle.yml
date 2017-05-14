@@ -25,6 +25,7 @@
     - dir ..
     - dir -a Test
     - dir -a 
+    - dir -a vendor
     - phpunit Test/PUConexion.php
     - phpunit Test/PUDataDB.php
 
