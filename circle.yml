@@ -33,10 +33,10 @@
       #- cat  ~/.ssh/authorized_keys
       #- cat  ~/.ssh/build_key.rsa
       #- ssh-keygen -t dsa
-      - ls -al ~/.ssh
-      - cat  ~/.ssh/id_circleci_github
-      - cat  ~/.ssh/id_heroku.com
-      - cat  ~/.ssh/id_heroku.com.pub
+      #- ls -al ~/.ssh
+      #- cat  ~/.ssh/id_circleci_github
+      #- cat  ~/.ssh/id_heroku.com
+      #- cat  ~/.ssh/id_heroku.com.pub
 
       #- git push git@heroku.com:hoobyonthego.git $CIRCLE_SHA1:master
       #- ./merge_to_master.sh
@@ -46,7 +46,7 @@
       #- git remote -v
       #- git remote set-url website abc@***.com
       - git checkout master
-      - git merge ConfigCircleCI
+      - git merge master ConfigCircleCI
       #heroku:
       #appname: hoobyonthegogithub
       #lasldaskdkals
