@@ -45,7 +45,8 @@
 
       #- git remote -v
       #- git remote set-url website abc@***.com
-      - git push origin master
+      - git checkout master
+      - git merge ConfigCircleCI
       #heroku:
       #appname: hoobyonthegogithub
       #lasldaskdkals
