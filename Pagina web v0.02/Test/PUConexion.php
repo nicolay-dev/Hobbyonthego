@@ -1,6 +1,6 @@
 <?php
 
-
+require_once 'vendor/Autoload.php';
 namespace Test;
 use PHPUnit\Framework\TestCase;
 include_once 'DataDB.php';
