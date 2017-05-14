@@ -3,7 +3,7 @@
 namespace Test;
 /*require_once 'vendor/Autoload.php';*/
 use PHPUnit\Framework\TestCase;
-use /DataDB;
+use \DataDB;
 #include_once 'DataDB.php';
 #require_once 'PHPUnit/Autoload.php';
 
