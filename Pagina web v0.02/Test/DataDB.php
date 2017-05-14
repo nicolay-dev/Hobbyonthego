@@ -1,6 +1,6 @@
 
 <?php
-namespace Test;
+
   /*$_HOST = "sql202.rf.gd";  
   $_USERNAME= "rfgd_19756503";
   $_DB = "rfgd_19756503_hobbyonthegoDB";
