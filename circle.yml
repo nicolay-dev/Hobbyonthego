@@ -20,10 +20,10 @@
 
   test:
     override:
-#      - phpunit Test/PUConexion.php
-#     - phpunit Test/PUDataDB.php
+     - phpunit Test/PUConexion.php
+     - phpunit Test/PUDataDB.php
 
-      - php Test/PUConexionFree.php
+#     - php Test/PUConexionFree.php
 
 
 
