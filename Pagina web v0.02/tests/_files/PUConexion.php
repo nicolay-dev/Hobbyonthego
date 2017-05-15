@@ -3,27 +3,23 @@
 namespace Test;
 /*require_once 'vendor/Autoload.php';*/
 use PHPUnit\Framework\TestCase;
-
-
-
+include 'DataDB';
 #include_once 'DataDB.php';
-#require_once 'PHPUnit/Autoload.php';
-
 
 class PUConexion extends TestCase{
-  	protected $ba;
+	  	protected $ba;
 
-	protected function setUp(){
-	    $this->ba = new DataDB;
-	}
+		protected function setUp(){
+		    $this->ba = new DataDB;
+		}
 
 
-    public function testHost() {
-    
-  	$ba = new DataDB;
-    $actual = $ba->getHost();
-    $this->assertEquals('localhost', $actual);
-    }
+	    public function testHost() {
+	    
+	  	$ba = new DataDB;
+	    $actual = $ba->getHost();
+	    $this->assertEquals('localhost', $actual);
+	    }
   
-}
+	}
 ?>

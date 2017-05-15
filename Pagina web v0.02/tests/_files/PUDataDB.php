@@ -2,7 +2,6 @@
 namespace Test;
 /*require_once 'vendor/Autoload.php';*/
 use PHPUnit\Framework\TestCase;
-include_once 'DataDB.php';
 
 
 class PUDataDB extends TestCase{
@@ -11,7 +10,7 @@ class PUDataDB extends TestCase{
     
         $data = new DataDB();
         
-    $expected = "localhost";
+        $expected = "localhost";
         $actual = $data->getHost();
         $this->assertEquals($expected, $actual);
     }
@@ -20,7 +19,7 @@ class PUDataDB extends TestCase{
     
         $data = new DataDB();
         
-    $expected = "root";
+        $expected = "root";
         $actual = $data->getUsername();
         $this->assertEquals($expected, $actual);
     }
@@ -38,7 +37,7 @@ class PUDataDB extends TestCase{
     
         $data = new DataDB();
         
-    $expected = "";
+        $expected = "";
         $actual = $data->getPass();
         $this->assertEquals($expected, $actual);
     }
