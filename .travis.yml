@@ -1,8 +1,0 @@
-language: php
-php:
-   - '7.0.11'
-
-script: phpunit PUDataDB.php
-deploy:
-  skip_cleanup: true
-  
