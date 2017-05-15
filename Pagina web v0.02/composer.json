@@ -8,7 +8,7 @@
         ]
   },
         "files": [
-            "Test/DataDB.php",
+            "Test/DataDB.php"
         ]
     }
 }
