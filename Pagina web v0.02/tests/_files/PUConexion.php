@@ -3,8 +3,7 @@
 namespace Test;
 /*require_once 'vendor/Autoload.php';*/
 use PHPUnit\Framework\TestCase;
-include 'DataDB';
-#include_once 'DataDB.php';
+include_once 'DataDB.php';
 
 class PUConexion extends TestCase{
 	  	protected $ba;
