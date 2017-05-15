@@ -4,12 +4,12 @@
   },
     "autoload": {
     	"classmap": [
-            "Test/"
+            "Test/DataDB.php"
         ]
   },
     "autoload-dev": {
         "classmap": [
-            "Test/"
+            "Test/DataDB.php"
         ],
         "files": [
             "Test/DataDB.php"

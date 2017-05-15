@@ -14,10 +14,10 @@ class PUConexion extends TestCase{
   
     public function testHost() {
     
-       $d = new DataDB();
+      /* $d = new DataDB();*/
         
     	$expect = 'localhost';
-        $actual = getHost();
+        $actual = DataDB::getHost();
         $this->assertEquals($expected, $actual);
     }
   
