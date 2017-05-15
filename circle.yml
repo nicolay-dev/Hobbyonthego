@@ -29,7 +29,7 @@
     #- cat vendor/composer/autoload_real.php'
     - dir -a vendor/phpunit
     - cat vendor/autoload.php
-    - phpunit tests/_files/PUConexion.php
+    - phpunit ../tests/_files/PUConexion.php
     #- phpunit tests/_files/PUDataDB.php
 
 #     - php Test/PUConexionFree.php
