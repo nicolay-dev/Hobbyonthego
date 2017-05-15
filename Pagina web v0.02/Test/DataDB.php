@@ -5,7 +5,7 @@
   $_USERNAME= "rfgd_19756503";
   $_DB = "rfgd_19756503_hobbyonthegoDB";
   $_PASS = "mtd3pbWo";*/
- public class DataDB{
+ class DataDB{
     
     private $host;  
     private $username;
@@ -14,19 +14,19 @@
 
 
     public function getHost(){
-      $host = "localhost";
+      $this->host = "localhost";
       return $host;    
     }
     public function getUsername(){
-      $username= "root";
+      $this->username= "root";
       return $username;    
     }
     public function getDB(){
-      $db = "hobby";
+      $this->db = "hobby";
       return $db;    
     }
     public function getPass(){
-      $pass = "";
+      $this->pass = "";
       return $pass;    
     }
   }
