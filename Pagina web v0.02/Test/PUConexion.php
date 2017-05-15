@@ -3,7 +3,7 @@
 namespace Test;
 /*require_once 'vendor/Autoload.php';*/
 use PHPUnit\Framework\TestCase;
-use DataDB;
+use Test\DataDB;
 
 
 #include_once 'DataDB.php';
@@ -14,10 +14,10 @@ class PUConexion extends TestCase{
   
     public function testHost() {
     
-       /* $d = new DataDB();*/
+       $d = new DataDB();
         
     	$expect = 'localhost';
-        $actual = DataDB::getHost();
+        $actual = getHost();
         $this->assertEquals($expected, $actual);
     }
   

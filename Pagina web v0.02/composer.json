@@ -3,8 +3,12 @@
         "phpunit/phpunit": "5.5.*"
   },
     "autoload": {
-        "psr-0": {
-            "": "/"
-        }
-    }
+    	"classmap": [
+            "src/"
+        ]
+  },"autoload-dev": {
+        "classmap": [
+            "Tests/"
+        ]
+   }
 }
