@@ -23,14 +23,14 @@
 #    - phpunit Test/
     - dir 
     - dir ..
-    - dir -a Test
+    - dir -a tests
     - dir -a 
     - dir -a vendor
     - cat vendor/composer/autoload_real.php'
     - dir -a vendor/phpunit
-    - cat vendor/autoload.php
-    - phpunit Test/PUConexion.php
-    - phpunit Test/PUDataDB.php
+    #- cat vendor/autoload.php
+    - phpunit tests/PUConexion.php
+    - phpunit tests/PUDataDB.php
 
 #     - php Test/PUConexionFree.php
 
