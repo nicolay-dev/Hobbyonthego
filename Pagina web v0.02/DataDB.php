@@ -5,7 +5,7 @@
   $_USERNAME= "rfgd_19756503";
   $_DB = "rfgd_19756503_hobbyonthegoDB";
   $_PASS = "mtd3pbWo";*/
- class DataDB{
+ public class DataDB{
     
     private $host;  
     private $username;
