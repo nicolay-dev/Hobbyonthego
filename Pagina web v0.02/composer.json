@@ -6,9 +6,9 @@
     	"classmap": [
             "Test/"
         ]
-  },"autoload-dev": {
-        "classmap": [
-            "Test/"
+  },
+        "files": [
+            "Test/DataDB.php",
         ]
-   }
+    }
 }
