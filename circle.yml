@@ -26,6 +26,8 @@
     - dir -a Test
     - dir -a 
     - dir -a vendor
+    - dir -a vendor/bin
+    - cat vendor/autoload.php
     - phpunit Test/PUConexion.php
     - phpunit Test/PUDataDB.php
 
