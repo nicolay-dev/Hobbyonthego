@@ -7,27 +7,23 @@
   $_PASS = "mtd3pbWo";*/
  class DataDB{
     
-    private $host;  
-    private $username;
-    private $db;
-    private $pass;
+    protected $host = "localhost";  
+    protected $username = "root";
+    protected $db = "hobby";
+    protected $pass = "";
 
 
     public function getHost(){
-      $this->host = "localhost";
-      return $host;    
+      return $this->host;    
     }
     public function getUsername(){
-      $this->username= "root";
-      return $username;    
+      return $this->username;    
     }
     public function getDB(){
-      $this->db = "hobby";
-      return $db;    
+      return $this->db;    
     }
     public function getPass(){
-      $this->pass = "";
-      return $pass;    
+      return $this->pass;    
     }
   }
 ?>

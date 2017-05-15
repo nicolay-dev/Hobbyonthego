@@ -67,12 +67,12 @@
     "autoload": {
         "classmap": [
             "fuente/",
-            "Test/"
+            "tests/"
         ]
     },
     "autoload-dev": {
         "classmap": [
-            "Test/"
+            "tests/"
         ]
     }
 }
