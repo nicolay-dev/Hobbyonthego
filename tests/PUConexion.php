@@ -7,15 +7,15 @@ class PUConexion extends TestCase{
 	    
 		    $d = new DataDb();
 		    /*$expect = 'localhost';*/
-		    $expect = 'rfgd_19756503';
+		    $expect = 'sql202.rf.gd';
 	        $actual = $d->getHost();
 	        $this->assertEquals($expect, $actual);
 		}
 	  	public function testUsername() {
 	    
 	        $data = new DataDB();
-	        
-	        $expected = "root";
+	        /*$expected = "root";*/
+	        $expected = "rfgd_19756503";
 	        $actual = $data->getUsername();
 	        $this->assertEquals($expected, $actual);
 	    }
