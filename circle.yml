@@ -64,7 +64,7 @@
       - git commit -m "Integración desde Circle CI"
       - git checkout master
       - git branch
-      - git pull origin master From https://github.com/Nicolaysito/Hobbyonthego
+      - git pull origin master
       #- git reset --hard origin/master
       - composer update
       
