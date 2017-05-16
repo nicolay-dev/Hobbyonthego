@@ -57,19 +57,15 @@
       
       
 
+      - composer update
+      - git add composer.json composer.lock
+      - git commit
       - git config --global user.email "Nicolay.JG@outlook.com"
       - git config --global user.name "Nicolay"
-      #- git add .
-      - git add composer.lock
-      - git commit -m "Integración desde Circle CI"
       - git checkout master
       - git branch
-      - git pull origin master
       - git reset --hard origin/master
-      - composer update
-      
-      - git merge dev -m "Merge" 
-      - git commit -m "Integración2 desde Circle CI"     
+      - git merge dev -m "Merge"
       - git push origin master
       #heroku:
       #appname: hoobyonthegogithub
