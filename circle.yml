@@ -61,7 +61,7 @@
       - git config --global user.name "Nicolay"
       - git checkout master
       - git branch
-      #- git reset --hard origin/master
+      - git reset --hard origin/master
       - composer update
       - git add .
       - git add composer.lock
