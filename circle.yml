@@ -60,7 +60,7 @@
       - git config --global user.name "Nicolay"
       - composer update
       - git add composer.json composer.lock
-      - git commit      
+      - git commit -m "Integracion conCircle CI"
       - git checkout master
       - git branch
       - git reset --hard origin/master
