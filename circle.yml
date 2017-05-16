@@ -56,22 +56,16 @@
       #- git remote set-url website abc@***.com
       
       
-
       - git config --global user.email "Nicolay.JG@outlook.com"
       - git config --global user.name "Nicolay"
+      - composer update
+      - git add composer.json composer.lock
+      - git commit -m "Integracion conCircle CI"
       - git checkout master
       - git branch
       - git reset --hard origin/master
-      - composer update
-      - git add .
-      - git add composer.lock
-      - git commit -m "Integración desde Circle CI"
-      - git merge dev -m "Merge"      
+      - git merge dev -m "Merge"
       - git push origin master
       #heroku:
       #appname: hoobyonthegogithub
-      #lasldaskdkals
-      #lasldaskdkals
-      #lasldaskdkals
-      #lasldaskdkals
-      #lasldaskdkals
+      #vAMOS
