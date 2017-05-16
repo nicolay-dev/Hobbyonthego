@@ -9,6 +9,8 @@ google.maps.event.addDomListener(window, "load", function(){
 
 		locacion[0]= ubicacion.latitude;
 		locacion[1]= ubicacion.longitude;
+		
+
 		const options = {
 			center: pst, 
 
@@ -68,6 +70,7 @@ google.maps.event.addDomListener(window, "load", function(){
 			
 			locacion[0]=  place.geometry.location.lat();
 			locacion[1]=place.geometry.location.lng();
+	
 			marcador.setPosition(place.geometry.location);
 			marcador.setVisible(true);
 
