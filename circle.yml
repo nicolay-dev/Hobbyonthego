@@ -59,20 +59,20 @@
 
       - git config --global user.email "Nicolay.JG@outlook.com"
       - git config --global user.name "Nicolay"
-      - git checkout master
-      - git branch
-      #- git reset --hard origin/master
-      - composer update
       - git add .
       - git add composer.lock
       - git commit -m "Integración desde Circle CI"
-      - git merge dev -m "Merge"      
+      - git checkout master
+      - git branch
+      - git pull origin master From https://github.com/Nicolaysito/Hobbyonthego
+      #- git reset --hard origin/master
+      - composer update
+      
+      - git merge dev -m "Merge" 
+      - git commit -m "Integración2 desde Circle CI"     
       - git push origin master
       #heroku:
       #appname: hoobyonthegogithub
-      #lasldaskdkals
-      #lasldaskdkals
-      #lasldaskdkals
       #lasldaskdkals
       #lasldaskdkals
       #lasldaskdkals
