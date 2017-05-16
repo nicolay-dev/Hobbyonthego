@@ -64,7 +64,7 @@
       - git checkout master
       - git branch
       - git reset --hard origin/master
-      - git merge dev -m "Merge"
+      - git merge dev -m "Merge automatizado"
       - git push origin master
       #heroku:
       #appname: hoobyonthegogithub
