@@ -56,12 +56,11 @@
       #- git remote set-url website abc@***.com
       
       
-
-      - composer update
-      - git add composer.json composer.lock
-      - git commit
       - git config --global user.email "Nicolay.JG@outlook.com"
       - git config --global user.name "Nicolay"
+      - composer update
+      - git add composer.json composer.lock
+      - git commit      
       - git checkout master
       - git branch
       - git reset --hard origin/master
