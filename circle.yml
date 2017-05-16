@@ -65,7 +65,7 @@
       - git commit -m "Integración desde Circle CI"
       - git checkout master
       - git branch
-      #- git reset --hard origin/master
+      - git reset --hard origin/master
       - git merge dev -m "Merge"      
       - git push origin master
       #heroku:
