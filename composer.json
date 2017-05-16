@@ -29,17 +29,13 @@
         "doctrine/dbal" : "~2.5@stable"
     },
     "minimum-stability" : "stable",
-    "support" : {
-        "source" : "https://github.com/Nicolaysito/Hobbyonthego/tree/master/Pagina%20web%20v0.02",
-        "issues" : "https://github.com/Nicolaysito/Hobbyonthego/issues"
-    },
     "config" : {
         "bin-dir" : "bin/",
         "vendor-dir" : "vendor/"
     },
     "autoload" : {
         "psr-4" : {
-            "" : "tests/_files"
+            "" : "tests"
         }
     },
     "require-dev" : {

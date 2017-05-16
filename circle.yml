@@ -18,15 +18,16 @@
   test:
     override:
 #    - phpunit Test/
-    - dir 
-    - dir ..
-    - dir -a tests
-    - dir -a 
-    - dir -a vendor
+    #- dir 
+    #- dir ..
+    #- dir -a tests
+    #- dir -a 
+    #- dir -a vendor
     #- cat vendor/composer/autoload_real.php'
-    - dir -a vendor/phpunit
-    - cat vendor/autoload.php
-    - phpunit tests/_files/PUConexion.php
+    #- dir -a vendor/phpunit
+    #- cat vendor/autoload.php
+    - phpunit tests/PUConexion.php
+    #- phpunit tests/_files/PUConexion.php
     #- phpunit tests/_files/PUDataDB.php
 
 #     - php Test/PUConexionFree.php
@@ -35,7 +36,7 @@
 
   deployment:
     production: 
-      branch: ConfigCircleCI
+      branch: dev
       commands: 
       
       #- cat  ~/.ssh/authorized_keys
@@ -59,7 +60,7 @@
       - git checkout master
       - git branch
       - git reset --hard origin/master
-      - git merge ConfigCircleCI -m "Merge"
+      - git merge dev -m "Merge"
       - git push origin master
       #heroku:
       #appname: hoobyonthegogithub
