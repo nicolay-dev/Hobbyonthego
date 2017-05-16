@@ -3,7 +3,7 @@ var locacion=[1,1];
 
 google.maps.event.addDomListener(window, "load", function(){
 
-	const ubicacion = new Localizacion(()=>{
+	const ubicacion = new localizacion(()=>{
 		
 		const pst={lat: ubicacion.latitude, lng: ubicacion.longitude};
 

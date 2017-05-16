@@ -1,7 +1,8 @@
-class Localizacion{
+class localizacion{
 
 	constructor(callback){
 		if (navigator.geolocation){
+			// obtiene la ubicacion
 			// obtiene la ubicacion
 			navigator.geolocation.getCurrentPosition((position)=>{
 				this.latitude = position.coords.latitude;
