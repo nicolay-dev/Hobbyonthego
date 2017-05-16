@@ -59,14 +59,14 @@
 
       - git config --global user.email "Nicolay.JG@outlook.com"
       - git config --global user.name "Nicolay"
-      - git checkout master
-      - git branch
-      #- git reset --hard origin/master
       - composer update
       - git add .
       - git add composer.lock
-      - git merge dev -m "Merge"
       - git commit -m "Integración desde Circle CI"
+      - git checkout master
+      - git branch
+      #- git reset --hard origin/master
+      - git merge dev -m "Merge"      
       - git push origin master
       #heroku:
       #appname: hoobyonthegogithub
