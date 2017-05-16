@@ -59,7 +59,7 @@
 
       - git config --global user.email "Nicolay.JG@outlook.com"
       - git config --global user.name "Nicolay"
-      - git add .
+      #- git add .
       - git add composer.lock
       - git commit -m "Integración desde Circle CI"
       - git checkout master
