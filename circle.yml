@@ -65,7 +65,7 @@
       - git checkout master
       - git branch
       - git pull origin master
-      #- git reset --hard origin/master
+      - git reset --hard origin/master
       - composer update
       
       - git merge dev -m "Merge" 
