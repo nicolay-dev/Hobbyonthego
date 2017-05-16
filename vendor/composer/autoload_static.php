@@ -132,7 +132,7 @@ class ComposerStaticInit368286198542f2706882f56427065ca2
     );
 
     public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/../..' . '/tests/_files',
+        0 => __DIR__ . '/../..' . '/tests',
     );
 
     public static $prefixesPsr0 = array (
