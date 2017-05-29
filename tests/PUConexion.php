@@ -33,7 +33,7 @@ class PUConexion extends TestCase{
 
 	        $data = new DataDB();
 	        /*$expected = "";*/
-	        $expected = "mtd3pbW";
+	        $expected = "mtd3pbWo";
 	        $actual = $data->getPass();
 	        $this->assertEquals($expected, $actual);
 	    }
