@@ -26,7 +26,8 @@
         "silex/silex" : "~2.0@stable",
         "jdesrosiers/silex-cors-provider" : "~1.0@stable",
         "symfony/finder" : "~3.1@stable",
-        "doctrine/dbal" : "~2.5@stable"
+        "doctrine/dbal" : "~2.5@stable",
+        "hybridauth/hybridauth": "^2.9"
     },
     "minimum-stability" : "stable",
     "config" : {

@@ -14,17 +14,20 @@
 		private $pass;
 
 		public function getHost(){
-			$host = "sql202.rf.gd";
-			//$host = "localhost";
+			//$host = "sql202.rf.gd";
+			$host = "localhost";
 			return $host;    
 		}
 		public function getUsername(){
-			$username = "rfgd_19756503";
+			//$username = "rfgd_19756503";
+			$username = "id1807813_nicolay";
 			//$username= "root";
 			return $username;    
 		}
 		public function getDB(){
-			$db = "rfgd_19756503_HB";
+
+			//$db = "rfgd_19756503_HB";
+			$db = "id1807813_hbogo";
 			//$db = "hobbyonthego";
 			return $db;    
 		}

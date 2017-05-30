@@ -14,11 +14,17 @@
 		$integrantes= $_POST['integrantes'];
 
 		$fecha= date("Y-m-d", strtotime("$date"));
-		
+		/*
 		$db = "rfgd_19756503_HB";
 		$user = "rfgd_19756503";
 		$pass = "mtd3pbWo";
 		$host = "sql202.rf.gd";
+*/
+		$db = "id1810343_bdgohobby";
+		$user = "id1810343_nicolay";
+		$pass = "mtd3pbWo";
+		$host = "localhost";
+
 
 
 /*
