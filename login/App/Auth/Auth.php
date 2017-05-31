@@ -32,7 +32,7 @@
     }
 
     protected static function storeUser($service, $socialUser){
-      $db = new PDO("mysql:host=localhost;dbname=sociallogin", "root", "");
+      $db = new PDO("mysql:host=localhost;dbname=id1810343_bdgohobby", "id1810343_nicolay", "mtd3pbWo");
 
       $user = self::getExistingUser($socialUser, $db);
 

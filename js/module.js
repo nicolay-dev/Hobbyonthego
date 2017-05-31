@@ -348,7 +348,7 @@ var initProfileSwiper = function(){
         } else {
             if(profileSwiperInit){
                 $('.profile-container *').removeAttr('style');
-                profileSwiper.destroy(true);
+                //profileSwiper.destroy(true);
                 profileSwiperInit = false;
             }
         }

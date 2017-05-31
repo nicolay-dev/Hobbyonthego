@@ -7,6 +7,6 @@
   Auth::logout();
 
   //redirect user
-  header('Location: index.php');  
+  header('Location: ../index.php');  
 
  ?>

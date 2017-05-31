@@ -2,6 +2,19 @@
 <html lang="en-US">
 <head>
 
+
+
+<?php
+
+  session_start();
+
+  require_once('login/vendor/autoload.php');// libreria despendendicas 
+  require_once('login/App/Auth/Auth.php');
+
+ ?>
+
+
+
 	<meta charset="UTF-8" />
 	<meta name="description" content=""/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +32,8 @@
 	<link rel="stylesheet" href="css/picto-foundry-household.css" />
 	<link rel="stylesheet" href="css/picto-foundry-shopping-finance.css" />
 	<link rel="stylesheet" href="css/picto-foundry-general.css" />
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/bootstrap-social.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="css/font-awesome.min.css" rel="stylesheet"/>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe2WKlFxtesnaxaoih0xj-BmkU2_KRaUs&libraries=places">
@@ -27,7 +42,8 @@
     <script src= "js/maps/localizacion.js"></script>
 </head>
 	<body>
-
+		<?php include_once("analyticstracking.php") ?>
+		
 		<div class="pushWrapper">
 		    <!-- Header (shown on mobile only) -->
 			<header class="pageHeader">
@@ -38,7 +54,7 @@
 
 				<!-- Logo -->
 			    <a class="headerLogo smoothScroll" href="#section-intro">
-			    	<i class="fa fa-child size-30"></i>
+			    	<i class="fa fa-home size-30"></i>
 					<span class="text">INICIO</span>
 				</a>
 			</header>
@@ -48,6 +64,19 @@
 
 				<nav class="mainMenu">
 					<ul class="menu">
+					</br>
+					<?php if (Auth::isLogin()): ?>
+						<li>
+							<a class="smoothScroll" href="login/logout.php" title="Iniciar Sesión"><i class="step fa fa-google size-30"></i><span class="text">Hola <?php echo $_SESSION['user']['name'] ?></span></a>
+						</li>
+       				<?php else: ?>
+         			<?php
+            			Auth::getUserAuth();
+           			?>
+	                   	<li>
+							<a class="smoothScroll" href="?login=Google" title="Iniciar Sesión"><i class="step fa fa-google size-30"></i><span class="text">Iniciar Sesión</span></a>
+						</li>
+					<?php endif; ?>
 						<li>
 							<a class="smoothScroll" href="#testimonials-part" title="¿Quienes-somos?"><i class="step icon-question size-30"></i><span class="text">¿Que somos?</span></a>
 						</li>
@@ -106,12 +135,22 @@
 
 			<div class="content">
 				<div class="container-template">
-				    <h1>
+				    <div class="relative fullwidth col-sm-9">
+                        <h1>
 				    	<i class="fa fa-child size-50"></i><br><br>
-				        <strong><span class="seconday">HOBBY ON THE GO</span></strong>
-				        </br>
-	                   	<a href="api/login/index.php" class="button submit form-btn semibold">Inicia sesion</a>
-				    </h1>
+				        <strong><span class="seconday">HOBBY ON THE GO</span></strong>				        
+				    	</h1>
+                    </div>
+				   
+				    <div class="relative fullwidth col-sm-3">
+                            <div class="relative fullwidth col-sm-12">
+                            <button href="#stastistical-part" type="button" id="secondaymit" name="secondaymit" class="form-btn1 semibold btn-block smoothScroll">Crear</button>
+                    		</div>
+                    <div class="relative fullwidth col-sm-12">
+                            <button href="#tips-part" type="button" id="secondaymit" name="secondaymit" class="form-btn1 semibold btn-block smoothScroll">Ultimos Eventos</button>
+                    		</div>
+                    </div>
+				    
 			    </div>
 		    </div>
 
