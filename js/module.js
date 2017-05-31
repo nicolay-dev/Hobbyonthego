@@ -405,7 +405,7 @@ var initPricingSwiper = function(){
         } else {
             if(pricingSwiperInit){
                 $('.pricing-container *').removeAttr('style');
-                pricingSwiper.destroy(true);
+                //pricingSwiper.destroy(true);
                 pricingSwiperInit = false;
             }
         }
