@@ -18,7 +18,7 @@
       if(self::issetRequest()){
         $service = $_GET['login'];
 
-        $hybridAuth = new Hybrid_Auth(__DIR__ . '\config.php');
+        $hybridAuth = new Hybrid_Auth(__DIR__ . '/config.php');
 
         $adapter = $hybridAuth->authenticate($service);
 

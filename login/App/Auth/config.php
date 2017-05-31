@@ -3,7 +3,7 @@
   return
 
   array(
-    "base_url" => "../../hydridauth.php", // imprat el hydridauth.php
+    "base_url" => "https://gohobby.000webhostapp.com/login/hybridauth.php", // import el hydridauth.php
     "providers" => array( // array de las redes socciales a implementar 
       "Twitter" => array(
         "enabled" => true, //habilitar o no la red social 
