@@ -32,6 +32,42 @@
 	<body>
 
 <script>
+	//Función para crear log
+	function log(a){
+			var parametros = {"valor" : a};
+			$.ajax({
+	                data:  parametros,
+	                url:   'fuente/Logic/loger.php',
+	                type:  'post'
+	        });
+	    
+	}
+
+	//Funcion crear evento
+	function crearEvento(){			
+		locacion = getLocacion();
+		
+		var parametros = {
+				"nombre" : document.getElementById('namedb').value,
+				"integrantes" : document.getElementById('integrantes').value,
+				"date" : document.getElementById('date1').value,
+				"genero" : document.getElementById('genero').value,				
+				"desc" : document.getElementById('desc').value,
+				"latitud" : locacion [0],
+				"longitud" : locacion [1]
+			};
+
+		$.ajax({
+	            data:  parametros,
+	            url:   'fuente/Persistence/servidor2.php',
+	          	type:  'post',
+	          	success : 	function(json) {
+        						alert(json);
+    						}
+	    });	
+			
+	}
+
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -108,6 +144,9 @@
 	function guadarEvento(){
 		alert("inicio funcion");
 		alert("alerta2");
+
+
+		//log("1");
 		
 		
 				var lo2 = getLocatio2();
@@ -157,13 +196,12 @@
 
 
 </script>
-
-
 	
-
-	
-	<?php include_once("analyticstracking.php") ?>
-		
+	<?php include_once("analyticstracking.php"); ?>
+	<?php		
+		include_once("fuente/Logic/logerIndex.php");
+		logIndex("Index.php");
+	?>		
 		<div class="pushWrapper">
 
 		    <!-- Header (shown on mobile only) -->
@@ -212,21 +250,6 @@
 
 			</div>
 
-			<!-- Share Menu -->
-			<!--
-			<nav class="shareMenu">
-				<a href="#" class="share-menu-trigger"><i class="fa fa-share-alt"></i></a>
-
-				<div class="tweet-share">
-
-					<a href="https://twitter.com/share" class="twitter-share-button" data-via="TaphaNgum">Tweet</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-
-
-				</div>
-			</nav>
-			-->
 		    <!-- Main -->
 		    <main>
 
@@ -264,11 +287,12 @@
 				    <div class="relative fullwidth col-sm-3">
                             
                             <div class="relative fullwidth col-sm-12">
-                            <button href="#stastistical-part" type="button" id="secondaymit" name="secondaymit" class="form-btn1 semibold btn-block smoothScroll"><i class="fa fa-paw size-50"></i>Crear Evento</button>
+                            <button href="#tips-part" type="button" id="secondaymit" name="secondaymit" class="form-btn1 semibold btn-block smoothScroll"><i class="fa fa-paw size-50"></i>Crear Evento</button>
                     		</div>
+
                     		
                     <div class="relative fullwidth col-sm-12">
-                            <button href="#tips-part" type="button" id="secondaymit" name="secondaymit" class="form-btn1 semibold btn-block smoothScroll"><i class="fa fa-paw size-50"></i>Listar Eventos</button>
+                            <button href="#stastistical-part" type="button" id="secondaymit" name="secondaymit" class="form-btn1 semibold btn-block smoothScroll"><i class="fa fa-paw size-50"></i>Listar Eventos</button>
                     		</div>
                     </div>
 				    
@@ -313,31 +337,7 @@
 
 				</section>
 
-<!--
-		<section class="timeline-part" id="timeline-part">
 
-			<div class="content">
-				<div class="container-template">
-
-					<div class="headergroup">
-					    <h2 class="in-point">
-					        <span class="seconday">La mejor opción para el desparche</span>
-					        <br>
-					        <br>
-					        <br>
-					        </h2>
-
-							<p align="center">Luxury Homes, the number-one purveyor of Luxury Homes in the world, is proud to prsent this short online showcase to you. We hope you enjoy it.</p>
-							<br>
-					        <br>
-				    </div>
-
-				    </div>
-			    </div>
-
-		</section>
-
-		-->
 			<!-- ONLINE STATISTICS SECTION -->
 
 		<section class="stastistical-part" id="stastistical-part">
@@ -365,11 +365,11 @@
 					<div class="row">
 						<h2>
 						  <div class="col-sm-6">
-							  <a href   ="fuente/GUI/AL.php" type= "button" class="form-btn1 semibold btn-block">
+							  <a onclick="log('3')" href="fuente/GUI/AL.php"  type= "button" class="form-btn1 semibold btn-block">
 							  <i class="fa fa-paw size-50"></i>Aire Libre</a>
 						  </div>
 						 <div class="col-sm-6">
-							  <a href   ="fuente/GUI/D.php" type= "button" class="form-btn1 semibold btn-block">
+							  <a onclick="log('3')" href="fuente/GUI/D.php" type= "button" class="form-btn1 semibold btn-block">
 							  <i class="fa fa-soccer-ball-o size-50"></i>Deportes</a>
 						  </div>
 						</h2>
@@ -377,11 +377,11 @@
 					<div class="row">
 						<h2>
 						  <div class="col-sm-6">
-							  <a href   ="fuente/GUI/P.php" type= "button" class="form-btn1 semibold btn-block">
+							  <a onclick="log('3')" href="fuente/GUI/P.php" type= "button" class="form-btn1 semibold btn-block">
 							  <i class="fa fa-film size-50"></i>Películas</a>
 						  </div>
 						  <div class="col-sm-6">
-							  <a href   ="fuente/GUI/F.php" type= "button" class="form-btn1 semibold btn-block">
+							  <a onclick="log('3')" href   ="fuente/GUI/F.php" type= "button" class="form-btn1 semibold btn-block">
 							  <i class="fa fa-group size-50"></i>Rumba</a>
 						  </div>
 						</h2>
@@ -391,141 +391,7 @@
 
 		</section>
 
-			<!-- TESTIMONIALS SECTION -->
-		<!--
-		<section class="testimonials-part" id="testimonials-part">
 
-			<div class="testimonials-part-section-seperator">
-				<div class="container-template">
-					<h2>
-				        <span class="seconday">What our</span>
-				        Clients say
-				    </h2>
-
-					<div class="testimonials-container">
-				    <ul class="testimonials testimonials-wrapper">
-
-						    <li class="testimonials-slide">
-						    	<span class="testimonial-text">I am in love with the home designs. They are what i've been looking for a long time! I am in love with the home designs. They are what i've been looking for a long time!</span>
-						    	<span class="testimonial-author">Ben Carson, DIRECTOR Carson Energy</span>
-						    </li>
-
-
-						    <li class="testimonials-slide">
-						    	<span class="testimonial-text">A very interesting and haunting visual experience!&#039;It stats with you a long time. Very, very unique. A very interesting and haunting visual experience!&#039;It stats with you a long time. Very, very unique.</span>
-						    	<span class="testimonial-author">Bob Gerry, CO-FOUNDER Hales &#038; Carters</span>
-						    </li>
-
-
-						    <li class="testimonials-slide">
-						    	<span class="testimonial-text">We must definitely give you a nod for this great experience. It was very much worth my time. A very interesting and haunting visual experience!&#039;It stats with you a long time.Very,very unique.</span>
-						    	<span class="testimonial-author">Catherine Denton, DIRECTOR Parpar</span>
-						    </li>
-
-						</ul>
-					</div>
-
-					<div class="testimonials-pagination"></div>
-				</div>
-			</div>
-
-		</section>
-		-->
-			<!-- MEMBERSHIP SECTION-->
-		<!--
-		<section class="membership-part" id="membership-part">
-
-
-			<div class="membership-part-section-seperator" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
-				<div class="container-template">
-					<img style="margin: auto;" src="images/keys.png" alt="keys">
-					<div class="headergroup">
-						<h2>
-					        <span class="seconday">Get</span>
-					        <span>A Home</span>
-
-					    </h2>
-				    </div>
-
-				    <div class="content-template">
-				        <p>Luxury operates on a membership basis. All customers who wish to be featured by Luxury need to secondayscribe to an annual membership once their application has been approved to meet our standard. We aim to feature only the best of the best.</p>
-						<p>If you would like to be considered for membership, please contact us.</p>
-				    </div>
-				    <br>
-				    <button type="button" class="form-btn semibold">Get A Home</button>
-				</div>
-			</div>
-
-		</section>
-		-->
-			<!-- PROFILE -->
-		<!--
-		<section class="featured-part" id="featured-part">
-
-
-			<div class="content">
-				<div class="container-template">
-
-					<div class="headergroup">
-						<h2>
-					        <span class="seconday">Top</span>
-					        <span>Featured</span>
-					    </h2>
-				    </div>
-				    <br>
-
-				    <div class="intro content-template">
-				        <p>Luxury Homes operates on in over 155 countries all over the world: <strong>Apartments</strong>, <strong>Condos</strong> and <strong>Mansions</strong>.</p>
-				    </div>
-				    <br>
-
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-
-				  <ol class="carousel-indicators">
-				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				  </ol>
-
-
-
-				  <div class="carousel-inner">
-				    <div class="item active">
-				      <img src="images/pricing.jpg" alt="...">
-				      <div class="carousel-caption">
-
-				      </div>
-				    </div>
-				    <div class="item">
-				      <img src="images/pricing.jpg" alt="...">
-				      <div class="carousel-caption">
-
-				      </div>
-				    </div>
-				     <div class="item">
-				      <img src="images/pricing.jpg" alt="...">
-				      <div class="carousel-caption">
-
-				      </div>
-				    </div>
-				  </div>
-
-
-
-				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				    <span class="glyphicon glyphicon-chevron-left"></span>
-				  </a>
-				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				    <span class="glyphicon glyphicon-chevron-right"></span>
-				  </a>
-				</div>
-
-			</div>
-		</div>
-
-		</section>
-		-->
 		<!-- Important Tips -->
 
 		<section class="tips-part" id="tips-part">
@@ -533,7 +399,7 @@
 			<div class="section-seperator">
 				<div class="container-template">
 					<h2>
-				        <span class="seconday">Nueva</span>
+				        <span class="seconday">Nuevo</span>
 				    </h2>
 				</div>
 			</div>
@@ -560,7 +426,7 @@
 							        <div class="col-md-12">
 								          <!-- Name -->
 			                             <!-- <br> -->
-			                            <input type="text" name="namedb" id="namedb" required="required" class="form" placeholder="Nombre de la actividad"/>
+			                            <input type="text" value="Nombre" name="namedb" id="namedb" required="required" class="form" placeholder="Nombre de la actividad"/>
 								    </div>
 								    <div class="col-md-12">
 								        <!-- Fecha -->
@@ -570,7 +436,7 @@
 								      <div class="row">
 								        <div class="col-lg-6">
 								         		<!-- Integrantes necesarios -->
-					                            <input type="number" name="integrantes" id="integrantes" required="required" class="form" placeholder="Integrantes Necesarios" min="1"="20"/></textarea>
+					                            <input type="number" value="12" name="integrantes" id="integrantes" required="required" class="form" placeholder="Integrantes Necesarios" min="1"="20"/></textarea>
 								        </div>
 								        <div class="col-lg-6" >
 								           <!-- Género -->
@@ -587,7 +453,7 @@
 								    <div class="col-md-6">
 								    	<!-- <br> -->
 			                            <!-- Descripción -->
-										<textarea name="desc" id="desc" class="form textarea"  placeholder="Descripción"></textarea>
+										<textarea name="desc" id="desc" value="Desca" class="form textarea"  placeholder="Descripción"></textarea>
 								    </div>
 								    <div class="col-md-6">
 
@@ -597,9 +463,7 @@
 								    	<!-- Autocompletado -->
 								    	<input name="autocompletado" type="text" id="autocomplete" class="form">
 								    	<!-- Maps -->
-								    	<div id="map" class="contact-form">
-								    	<label id="latitud" style='display:none;'>no hay</label>
-										<label id="longitud" style='display:none;'>no hay</label>
+								    	<div id="map" class="contact-form">							    	
 										</div>
 								    </div>
 						  	</div>
@@ -607,7 +471,7 @@
 	                        <div class="relative fullwidth col-xs-12">
 	                            <!-- Send Button -->
 	                            </br>
-	                            <button onclick="guadarEvento()" href="" class="button form-btn semibold">Crear evento!</button>
+	                            <button onclick="crearEvento()" href="" class="button semibold">Crear evento!</button>
 	                        </div><!-- End Bottom secondaymit -->
 	                        <!-- Clear -->
 	                        <div class="clear"></div>
@@ -618,278 +482,8 @@
 	        </div>
 
 
-<!-- lista vieja
-					<div class="content-template">
-				       	<ul>
-							<li>
-								<i class="icon-task-check"></i> Your listing will be included in the Luxury directory area (coming soon!)
-							</li>
-							<li>
-								<i class="icon-task-check"></i> This listing will include your company logo, company description and contact details
-							</li>
-							<li>
-								<i class="icon-task-check"></i> Payment can be made online via Stripe.
-							</li>
-							<li>
-								<i class="icon-task-check"></i> Inclusion in the our social media activity plus followed and liked by Luxury
-							</li>
-							<li>
-								<i class="icon-task-check"></i> Inclusion in the member’s only Luxury online directory
-							</li>
-							<li>
-								<i class="icon-task-check"></i> A Luxury logo will be provided for you to feature this on your website.
-							</li>
-						</ul>
-				    </div>
-
-					<br/>
-				   	<button type="button" class="form-btn semibold">Space <body></body>oking Form</button>
-
-				</div>
-			</div>
--->
 		</section>
 
-			<!-- PRICING -->
-		<!--
-		<section class="pricing-part" id="pricing-part">
-
-
-			<div class="section-seperator">
-				<div class="container-template">
-					<h2>
-				        <span class="seconday">Our</span>
-				       Pricing
-				    </h2>
-				</div>
-			</div>
-
-			<div class="content">
-				<div class="container-template">
-
-
-
-			 		<ul class="pricing-menu">
-
-					    <li class="selected"><a href="#">On Sale</a></li>
-					    <li><a href="#">Recently Sold</a></li>
-					    <li><a href="#">For Rent</a></li>
-
-					</ul>
-
-
-					<a href="#" class="pricing-nav pricing-nav-prev"><i class="fa fa-angle-left"></i></a>
-					<a href="#" class="pricing-nav pricing-nav-next"><i class="fa fa-angle-right"></i></a>
-
-			 		<div class="pricing-container">
-				    <div class="pricing-wrapper">
-
-
-					    <div class="pricing-slide">
-					    	<div class="headergroup">
-					    		<h3>
-					    			<span>Sale</span>
-									<span class="seconday">Annual Cost</span>
-									<span class="super-seconday">$587,000</span>
-				    			</h3>
-					    	</div>
-
-							<div class="pricing-slide-content content-template">
-					    		<p>Our Diamond Membership Package</p>
-								<ul>
-									<li class="pricing-slide-text"> <i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-
-								</ul>
-								<p>&nbsp;</p>
-				    		</div>
-				    	</div>
-
-
-					    <div class="pricing-slide">
-					    	<div class="headergroup">
-					    		<h3>
-					    			<span>Sold</span>
-									<span class="seconday">Annual Cost</span>
-									<span class="super-seconday">$358,000</span>
-				    			</h3>
-					    	</div>
-
-							<div class="pricing-slide-content content-template">
-					    		<p>Our premium Membership Package</p>
-								<ul>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-
-								</ul>
-								<p>&nbsp;</p>
-				    		</div>
-				    	</div>
-
-
-					    <div class="pricing-slide">
-					    	<div class="headergroup">
-					    		<h3>
-					    			<span>Rent</span>
-									<span class="seconday">Annual Cost</span>
-									<span class="super-seconday">$18,000</span>
-				    			</h3>
-					    	</div>
-
-							<div class="pricing-slide-content content-template">
-								<p>Our great Membership Package</p>
-					    		<ul>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-									<li class="pricing-slide-text"><i class="icon-compose"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, explicabo, Luxury.</li>
-
-								</ul>
-				    		</div>
-				    	</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		</section>
-
-		-->
-			<!-- EVENTS CALENDAR SECTION-->
-			<!--
-		<section class="events-part" id="events-part">
-
-
-
-			<div class="section-seperator">
-				<div class="container-template">
-					<h2>
-				        <span class="seconday">Upcoming</span>
-				        Events
-				    </h2>
-				</div>
-			</div>
-
-
-			<div class="content">
-				<div class="container-template">
-
-
-			 		<ul class="events-list">
-		 				<li class="event-titles">
-		 					<div class="event-title">Event</div>
-		 					<div class="event-title">Date</div>
-		 					<div class="event-title">Location</div>
-		 				</li>
-
-		 				<li>
-		 					<div class="event-text">
-								<div class="event-details content-template">
-									<h4 class="event-title">Highbury</h4>
-
-									<div class="event-date">
-										08/09/2015							</div>
-
-									<div class="event-location">
-										London Rd. 46 Waterloo Road. NW1 5QT  	</div>
-								</div>
-
-								<div class="event-description content-template">devious Semikoli. Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. </div>
-							</div>
-
-							<div class="event-image">
-								<img src="images/lambo2copy.jpg" alt="your text" />
-							</div>
-		 				</li>
-
-
-		 				<li>
-		 					<div class="event-text">
-								<div class="event-details content-template">
-									<h4 class="event-title">Gordon Hague</h4>
-
-									<div class="event-date">
-										29/05/2014
-									</div>
-
-									<div class="event-location">
-										Unit 68
-										69 Royal Hospital Road
-										London SW3 4HP
-									</div>
-								</div>
-
-								<div class="event-description content-template">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden of Luxury.
-								</div>
-							</div>
-
-							<div class="event-image">
-								<img src="images/appartmentcopy.jpg" alt="your text" />					</div>
-		 				</li>
-
-
-		 				<li>
-		 					<div class="event-text">
-								<div class="event-details content-template">
-									<h4 class="event-title">devious Semikoli</h4>
-
-									<div class="event-date">
-										09/07/2013							</div>
-
-									<div class="event-location">
-										Rocking Palace, 22 Happiness Hill Way.							</div>
-								</div>
-
-								<div class="event-description content-template">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden</div>
-							</div>
-
-							<div class="event-image">
-								<img src="images/intro_bgcopy.jpg" alt="your text here" />					</div>
-		 				</li>
-
-
-		 				<li>
-		 					<div class="event-text">
-								<div class="event-details content-template">
-									<h4 class="event-title">47 Chandos Place</h4>
-
-									<div class="event-date">
-										29/09/2019
-									</div>
-
-									<div class="event-location">
-											47 Chandos Place
-											Covent Garden
-											London WC2N 4HS
-											Covent Garden, Strand
-									</div>
-								</div>
-
-								<div class="event-description content-template">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden </div>
-							</div>
-
-							<div class="event-image">
-								<img src="images/brand-copyy.jpg" alt="your text" />
-							</div>
-		 				</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-			-->
 			<!-- FOUNDERS & TEAM SECTION-->
 
 		<section class="section-team" id="section-team">

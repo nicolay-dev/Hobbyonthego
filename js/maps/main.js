@@ -114,16 +114,6 @@ function agregarMarcador( location, mapan, marcador ){
 
 function getLocacion(){
 	//console.log(locacion);
-
-	latitud=document.getElementById("latitud");
-	longitud=document.getElementById("longitud");
-
-	latitud.innerHTML=locacion[0];
-	longitud.innerHTML=locacion[1];
-	return locacion;
-}
-function getLocacion2(){
-	console.log("entreal get");
 	return locacion;
 }
 

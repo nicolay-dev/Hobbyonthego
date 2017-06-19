@@ -53,15 +53,13 @@
 		
 
 		}
-
-
 		function guardarEventos($nombre,$integrantes,$date,$genero,$desc,$latitud,$longitud){
+			echo $nombre;
 			$dataDB = new DataDB();	
 			$connection= new mysqli($dataDB->getHost(), $dataDB->getUsername(), $dataDB->getPass(), $dataDB->getDB()) or die ("Error al Conecatar con la base de datos");
 			$fecha= date("Y-m-d", strtotime("$date"));
 			$query2="insert INTO USERS(nombre,descr,fecha,genero,max_usuario,latitud,longitud) VALUES ('$nombre','$desc','$fecha','$genero',$integrantes,'$latitud','$longitud');";
-			$rs2= $connection->query($query2);
-				
+			$rs2= $connection->query($query2);				
 		}
 	}
 ?>

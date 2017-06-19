@@ -9,7 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> Luxury - Dream Home At Your Doorsteps </title>
+    <title> Consulta </title>
 	<!-- Windows 8 Tiles -->
 	<meta name="msapplication-TileColor" content="#FFFFFF"/>
 	<!-- ****** faviconit.com favicons ****** -->
@@ -24,7 +24,8 @@
 
 	<link href="../../css/font-awesome.min.css" rel="stylesheet"/>
 </head>
-	<body>
+	
+	
 		<div class="pushWrapper">
 		    <!-- Header (shown on mobile only) -->
 			<header class="pageHeader">

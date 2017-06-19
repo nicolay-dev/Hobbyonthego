@@ -9,7 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> Luxury - Dream Home At Your Doorsteps </title>
+    <title> Consulta </title>
 	<!-- Windows 8 Tiles -->
 	<meta name="msapplication-TileColor" content="#FFFFFF"/>
 	<!-- ****** faviconit.com favicons ****** -->
@@ -25,6 +25,30 @@
 	<link href="../../css/font-awesome.min.css" rel="stylesheet"/>
 </head>
 	<body>
+
+	<script type="text/javascript">
+		
+	function mostrarMapa(nombre,latitud,longitud){
+
+	var parametros = {
+					"nombre" : nombre,
+					"latitud" : latitud,
+					"longitud" : longitud
+		};
+
+	$.ajax({
+            data:  parametros,
+            url:   'fuente/Persistence/servidor2.php', //llamar php del mapa
+          	type:  'post',
+          	
+    });	
+	}
+
+
+
+	</script>
+
+
 		<div class="pushWrapper">
 		    <!-- Header (shown on mobile only) -->
 			<header class="pageHeader">
@@ -148,10 +172,10 @@
 									echo '<li>
 									<div class="event-text">
 									<div class="event-details content-template">
-									<h4 class="event-title">'.$row['name'].'</h4>
+									<h4 class="event-title">'.$row['nombre'].'</h4>
 									<div class="event-date">'.$row['fecha'].'</div>
 									<div class="event-location">
-									<a href="../Persistence/validar.php" class="form-btn semibold">Inscribirse!</a></div></div>
+									<a onclick="mostrarMapa('.$row['nombre']','.$row['latitud']','.$row['longitud']')" href="" class="form-btn semibold">Mostrar Mapa</a></div></div>
 									<div class="event-description content-template">'.$row['descr'].'.</div></div>
 									<div class="event-image">
 									<img src="../../images/AireLibre.jpg" alt="your text" /></div>';
@@ -278,18 +302,18 @@
 			</main>
 
 		</div>
-		<script type='text/javascript' src='js/jquery.js'></script>
-		<script type='text/javascript' src='js/jquery-migrate.js'></script>
-		<script type='text/javascript' src='js/jquery.form.js'></script>
-		<script type='text/javascript' src='js/jquery.mobile.custom.js'></script>
-		<script type='text/javascript' src='js/modernizr.js'></script>
-		<script type='text/javascript' src='js/response.js'></script>
-		<script type='text/javascript' src='js/swiper.js'></script>
-		<script type='text/javascript' src='js/waypoints.js'></script>
-		<script type='text/javascript' src='js/jquery.stellar.js'></script>
-		<script type='text/javascript' src='js/module.js'></script>
-		<script type='text/javascript' src='js/bootstrap.min.js'></script>
-		<script src="js/wow.min.js"></script>
+		<script type='text/javascript' src='../../js/jquery.js'></script>
+		<script type='text/javascript' src='../../js/jquery-migrate.js'></script>
+		<script type='text/javascript' src='../../js/jquery.form.js'></script>
+		<script type='text/javascript' src='../../js/jquery.mobile.custom.js'></script>
+		<script type='text/javascript' src='../../js/modernizr.js'></script>
+		<script type='text/javascript' src='../../js/response.js'></script>
+		<script type='text/javascript' src='../../js/swiper.js'></script>
+		<script type='text/javascript' src='../../js/waypoints.js'></script>
+		<script type='text/javascript' src='../../js/jquery.stellar.js'></script>
+		<script type='text/javascript' src='../../js/module.js'></script>
+		<script type='text/javascript' src='../../js/bootstrap.min.js'></script>
+		<script src="../../js/wow.min.js"></script>
 		<script>
 		new WOW().init();
 		</script>
