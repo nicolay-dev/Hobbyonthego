@@ -2,19 +2,6 @@
 <html lang="en-US">
 <head>
 
-
-
-<?php
-
-  session_start();
-
-  require_once('login/vendor/autoload.php');// libreria despendendicas 
-  require_once('login/App/Auth/Auth.php');
-
- ?>
-
-
-
 	<meta charset="UTF-8" />
 	<meta name="description" content=""/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,15 +23,149 @@
 	<link rel="stylesheet" href="css/bootstrap-social.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe2WKlFxtesnaxaoih0xj-BmkU2_KRaUs&libraries=places">
     </script>
 	<script src= "js/maps/main.js"></script>
     <script src= "js/maps/localizacion.js"></script>
 </head>
 	<body>
-		<?php include_once("analyticstracking.php") ?>
+
+<script>
+  // This is called with the results from from FB.getLoginStatus().
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    // The response object is returned with a status field that lets the
+    // app know the current login status of the person.
+    // Full docs on the response object can be found in the documentation
+    // for FB.getLoginStatus().
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      testAPI();
+    } else {
+      // The person is not logged into your app or we are unable to tell.
+      
+    }
+  }
+
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '820159238139212',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.9' // use graph api version 2.8
+  });
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // Here we run a very simple test of the Graph API after login is
+  // successful.  See statusChangeCallback() for when this call is made.
+	function testAPI() {
+	    console.log('Welcome!  Fetching your information.... ');
+	    FB.api('/me?fields=id,name,email,permissions', function(response) {
+		      console.log('Successful login for: '+ response.id +':' + response.name + ':' + response.id.email);
+		      var user = new usuario(response.id,response.name);
+		      var listUsers = []; 
+			  listUsers.push(user);	  
+		      var listUsersJSON = JSON.stringify(listUsers);
+
+	      	  $.post('fuente/Persistence/servidor.php', {usuarios: listUsersJSON},function(respuesta){
+	      	  	alert(respuesta);
+	      	  });
+
+
+	    },{scope: 'email'});
+	}
+	function usuario(id, nombre){
+	    this.id = id;
+	    this.nombre = nombre;
+	}
+
+	function guadarEvento(){
+		alert("inicio funcion");
+		alert("alerta2");
+		
+		
+				var lo2 = getLocatio2();
+		alert("pedilocation");
+		  var eventoN = new evento(document.getElementById('namedb').value,document.getElementById('integrantes').value,document.getElementById('date1').value,document.getElementById('genero').value, document.getElementById('desc').value,lo2[0],lo2[1]);
+		 alert("cree eventoN");
+		  alert (eventoN.nombre);
+	      var listEvents = []; 
+		  listEvents.push(eventoN);	  
+	      var listEventJSON = JSON.stringify(listEvents);
+		$.post('fuente/Persistence/servidor2.php', {eventos: listEventJSON},function(respuesta){
+	      	  	alert(respuesta);
+	      	  });
+	}
+
+	function evento(nombre,integrantes,date,genero,desc,latitud,longitud){
+		//this.nombre = document.getElementById('namedb').value;
+		//this.integrantes = document.getElementById('integrantes').value;
+		//this.date = document.getElementById('date1').value;
+		//this.genero = document.getElementById('genero').value;
+		//this.desc = document.getElementById('desc').value;
+		
+		//var lati = document.getElementById('latitud');
+		//var longi = document.getElementById('longitud').innerHTML;
+		//latitud=document.getElementById("latitud");
+		//this.loc = getLocatio2();
+		
+		//this.latitud = this.loc[0];
+		//this.longitud = this.loc[1];
+		//console.log(this.loc[0]);
+		//console.log(this.loc[1]);
+		//alert ("Entre a la función");
+		//alert (this.nombre);
+
+		this.nombre = nombre;
+		this.integrantes = integrantes;
+		this.date = date;
+		this.genero = genero;
+		this.desc = desc;
+		//var lati = document.getElementById('latitud');
+		//var longi = document.getElementById('longitud').innerHTML;
+		//latitud=document.getElementById("latitud");
+		//this.loc = getLocatio2();
+		this.latitud = latitud;
+		this.longitud = longitud;
+		}
+
+
+</script>
+
+
+	
+
+	
+	<?php include_once("analyticstracking.php") ?>
 		
 		<div class="pushWrapper">
+
 		    <!-- Header (shown on mobile only) -->
 			<header class="pageHeader">
 				<!-- Menu Trigger -->
@@ -64,19 +185,7 @@
 
 				<nav class="mainMenu">
 					<ul class="menu">
-					</br>
-					<?php if (Auth::isLogin()): ?>
-						<li>
-							<a class="smoothScroll" href="login/logout.php" title="Iniciar Sesión"><i class="step fa fa-google size-30"></i><span class="text">Hola <?php echo $_SESSION['user']['name'] ?></span></a>
-						</li>
-       				<?php else: ?>
-         			<?php
-            			Auth::getUserAuth();
-           			?>
-	                   	<li>
-							<a class="smoothScroll" href="?login=Google" title="Iniciar Sesión"><i class="step fa fa-google size-30"></i><span class="text">Iniciar Sesión</span></a>
-						</li>
-					<?php endif; ?>
+					</br>		
 						<li>
 							<a class="smoothScroll" href="#testimonials-part" title="¿Quienes-somos?"><i class="step icon-question size-30"></i><span class="text">¿Que somos?</span></a>
 						</li>
@@ -124,9 +233,19 @@
 			<!-- FORMS -->
 
 			<!-- INTRO -->
+				
 
+
+
+		<section id="menuNico" class="right">
+				<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="true" onlogin="checkLoginState();"></div>
+
+
+
+		</section>
 
 		<section class="section-intro" id="section-intro" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+		
 
 			<a class="LC-logo" href="#/">
 				<i class="icon-LClogo"></i>
@@ -143,11 +262,13 @@
                     </div>
 				   
 				    <div class="relative fullwidth col-sm-3">
+                            
                             <div class="relative fullwidth col-sm-12">
-                            <button href="#stastistical-part" type="button" id="secondaymit" name="secondaymit" class="form-btn1 semibold btn-block smoothScroll">Crear</button>
+                            <button href="#stastistical-part" type="button" id="secondaymit" name="secondaymit" class="form-btn1 semibold btn-block smoothScroll"><i class="fa fa-paw size-50"></i>Crear Evento</button>
                     		</div>
+                    		
                     <div class="relative fullwidth col-sm-12">
-                            <button href="#tips-part" type="button" id="secondaymit" name="secondaymit" class="form-btn1 semibold btn-block smoothScroll">Ultimos Eventos</button>
+                            <button href="#tips-part" type="button" id="secondaymit" name="secondaymit" class="form-btn1 semibold btn-block smoothScroll"><i class="fa fa-paw size-50"></i>Listar Eventos</button>
                     		</div>
                     </div>
 				    
@@ -429,17 +550,13 @@
 					</div>
 					<div class="contact-form">
 
-						 <form action="fuente/Persistence/guardar.php" method="post" name = "formulario">
+						 <form name = "formulario">
 
 						 	<!-- Left Inputs -->
 						 	<div class="row">
 						   		<div class="col-md-6">
 							      <div class="row">
-							      	<div class="col-md-12">
-								          <!-- Usuario -->
-			                            <br>
-			                            <input type="text" name="username" required="required" class="form" placeholder="Usuario"/>
-								    </div>
+							      	
 							        <div class="col-md-12">
 								          <!-- Name -->
 			                             <!-- <br> -->
@@ -468,11 +585,6 @@
 						    	  </div>
 						    		<!-- Right Inputs -->
 								    <div class="col-md-6">
-
-									          <!-- Contraseña -->
-				                            <br>
-				                            <INPUT type="password" name="password" required="required" class="form" placeholder="Contraseña"/>
-
 								    	<!-- <br> -->
 			                            <!-- Descripción -->
 										<textarea name="desc" id="desc" class="form textarea"  placeholder="Descripción"></textarea>
@@ -485,17 +597,17 @@
 								    	<!-- Autocompletado -->
 								    	<input name="autocompletado" type="text" id="autocomplete" class="form">
 								    	<!-- Maps -->
-								    	<div id="map" class="contact-form" onclick="main.getLocation()"></div>
-								    	<p id="latitud" style='display:none;'>no hay</p>
-										<p id="longitud" style='display:none;'>no hay</p>
-
+								    	<div id="map" class="contact-form">
+								    	<label id="latitud" style='display:none;'>no hay</label>
+										<label id="longitud" style='display:none;'>no hay</label>
+										</div>
 								    </div>
 						  	</div>
 	                        <!-- Bottom secondaymit -->
 	                        <div class="relative fullwidth col-xs-12">
 	                            <!-- Send Button -->
 	                            </br>
-	                            <button href="" type="button submit" class="button submit form-btn semibold">Crear evento!</button>
+	                            <button onclick="guadarEvento()" href="" class="button form-btn semibold">Crear evento!</button>
 	                        </div><!-- End Bottom secondaymit -->
 	                        <!-- Clear -->
 	                        <div class="clear"></div>
@@ -872,6 +984,7 @@
 		</section>
 
 			<footer class="pageFooter">
+				
 				<div class="btnContainer">
 					<a class="gc-link" href="#" target="_blank"><i class="icon-handcrafted"></i></a>
 				</div>

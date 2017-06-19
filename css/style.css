@@ -3244,6 +3244,27 @@ section#tips-part {
     -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
   }
 
+
+
+  #menuNico{
+      width: auto;
+      padding-top: 25px;
+      padding-left: 73%;
+      margin: auto;
+      position: fixed;
+      z-index: 5;
+  }
+
+ 
+  .gototop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    color: #fff;
+  }
+
   .form-btn:hover{
     background:#111;
     color: white;
@@ -3259,9 +3280,9 @@ section#tips-part {
     display: block;
     height: 180px;
     padding:15px;
-    color:#fff;
+    color:aliceblue;
     background:#34495E;
-    border:none;
+    border:solid;
     border-radius:3px;
     outline: none;
     -webkit-transition: all 0.3s;

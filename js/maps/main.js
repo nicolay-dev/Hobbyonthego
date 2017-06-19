@@ -98,23 +98,32 @@ google.maps.event.addDomListener(window, "load", function(){
 function agregarMarcador( location, mapan, marcador ){
 
 	marcador.setPosition(location);
-	console.log("LATIRUD: ", location.lat());
-	console.log("LONGITUD: ", location.lng());
+	//console.log("LATIRUD: ", location.lat());
+	//console.log("LONGITUD: ", location.lng());
+	
+
 
 	locacion[0]= location.lat();
 	locacion[1]= location.lng();
-	
 
+	console.log(locacion[0]);
+	console.log(locacion[1]);
 }
 
+
+
 function getLocacion(){
-	console.log(locacion);
+	//console.log(locacion);
 
 	latitud=document.getElementById("latitud");
 	longitud=document.getElementById("longitud");
 
 	latitud.innerHTML=locacion[0];
 	longitud.innerHTML=locacion[1];
+	return locacion;
+}
+function getLocacion2(){
+	console.log("entreal get");
 	return locacion;
 }
 

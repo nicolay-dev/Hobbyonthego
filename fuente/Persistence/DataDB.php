@@ -20,14 +20,14 @@
 		}
 		public function getUsername(){
 			//$username = "rfgd_19756503";
-			$username = "id1807813_nicolay";
+			$username = "id1810343_nicolay";
 			//$username= "root";
 			return $username;    
 		}
 		public function getDB(){
 
 			//$db = "rfgd_19756503_HB";
-			$db = "id1807813_hbogo";
+			$db = "id1810343_bdgohobby";
 			//$db = "hobbyonthego";
 			return $db;    
 		}

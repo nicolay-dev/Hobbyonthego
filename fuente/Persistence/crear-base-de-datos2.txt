@@ -1,19 +1,20 @@
 CREATE TABLE USERS(
 		id_user			INT	     NOT NULL	AUTO_INCREMENT,	
 		name			VARCHAR(50)  NOT NULL,
-		email			VARCHAR(100)  NOT NULL,
+		red_id			VARCHAR(50) NOT NULL,
 
 		CONSTRAINT user_pk_name PRIMARY KEY (id_user)
 );
 
 CREATE TABLE EVENTS(
 		id_event       		INT	  	NOT NULL AUTO_INCREMENT, 
+		nombre			VARCHAR(500)	NOT NULL,
 		descr			VARCHAR(500)  	NOT NULL,
 		fecha			DATE		NOT NULL,
 		genero			VARCHAR(45)  	NOT NULL,
 		max_usuario		INT		NOT NULL,
-		latitud			DOUBLE		NOT NULL,
-		longitud		DOUBLE		NOT NULL,
+		latitud			VARCHAR(500)	NOT NULL,
+		longitud		VARCHAR(500)	NOT NULL,
 
 		CONSTRAINT eve_pk_id_event PRIMARY KEY (id_event)
 );
