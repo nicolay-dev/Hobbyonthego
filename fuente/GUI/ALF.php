@@ -68,7 +68,7 @@
 				<nav class="mainMenu">
 					<ul class="menu">
 						<li>
-							<a class="smoothScroll" href="#events-part" title="Upcoming Events"><i class="step icon-calendar-1 size-30 size"></i><span class="text">Lista</span></a>
+							
 						</li>
 						
 					</ul>
