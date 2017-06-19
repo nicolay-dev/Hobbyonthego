@@ -23,6 +23,8 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
+
 @font-face {
   font-family: "picto-foundry-emotions";
   src: url("../fonts/picto-foundry-emotions.eot");
@@ -3176,7 +3178,7 @@ section#tips-part {
     background:rgba(0, 0, 0, 0.63);
     border:1px solid rgba(0, 0, 0, 0.075);
     margin-bottom:13px;
-    color:#727272 !important;
+    color:#ffffff !important;
     font-size:20px;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
