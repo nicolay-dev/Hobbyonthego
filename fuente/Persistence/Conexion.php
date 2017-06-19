@@ -10,17 +10,17 @@
 			$rs= $connection->query($query);
 		}
 		
-		function cargarGF($fecha_inicio, $genero){
+		function cargarGF($fecha_inicio,$fecha_fin, $genero){
 				
-			$fecha= date("Y-m-d", strtotime("$fecha_inicio"));
+			$fechaini= date("Y-m-d", strtotime("$fecha_inicio"));
+			$fechafin= date("Y-m-d", strtotime("$fecha_fin"));
 			//echo $fecha."<br>";
 
 			
 			$dataDB = new DataDB();	
 			$connection= new mysqli($dataDB->getHost(), $dataDB->getUsername(), $dataDB->getPass(), $dataDB->getDB()) or die ("Error al Conecatar con la base de datos");
-			$query ="select * from EVENTS where genero ='$genero' AND fecha='$fecha'";
-			$rs= $connection->query($query);
-			
+			$query ="select * from EVENTS where genero ='$genero' AND fecha>='$fechaini' AND fecha <= '$fechafin'";
+			$rs= $connection->query($query);			
 			return $rs;
 		}	
 

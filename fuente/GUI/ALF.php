@@ -25,6 +25,27 @@
 	<link href="../../css/font-awesome.min.css" rel="stylesheet"/>
 </head>
 	
+
+	<script type="text/javascript">
+		
+	function mostrarMapa(nombre,latitud,longitud){
+
+	var parametros = {
+					"nombre" : nombre,
+					"latitud" : latitud,
+					"longitud" : longitud
+		};
+
+	$.ajax({
+            data:  parametros,
+            url:   'fuente/Logic/mapa.php', //llamar php del mapa
+          	type:  'post',
+          	
+    });	
+	}
+
+	</script>
+
 	
 		<div class="pushWrapper">
 		    <!-- Header (shown on mobile only) -->
@@ -103,14 +124,16 @@
 				<div class="container-template">
 					<form action="ALF.php" method="post" name = "formulario">
 					<div class="col-md-6">
+					
 					</div>
 					<div class="col-md-4">
 					<!-- Fecha -->
-			    	<input type="datetime-local" name="date2" id="date1" required="required" class="form" value = "2017-04-18T10:00"/>
+			    	<input type="date" name="dateini" id="dateini" required="required" class="form" value = "2017-07-01"/>
+			    	<input type="date" name="datefin" id="datefin" required="required" class="form" value = "2017-07-20"/>
 				</div>
 				<div class="col-md-2">
 					<!-- Boton filtrar -->
-					<button href="" type="button submit" class="button submit form-btn semibold">Filtrar por fecha</button>
+					<button href="" type="button submit" class="button submit form-btn semibold">Rango de fechas</button>
 			    </div>
 			    </form>
 			    </div>
@@ -133,7 +156,7 @@
 								
 								$conexion = new Conexion();
 
-								$data=$conexion->cargarGF($_POST['date2'] 	, "Aire Libre");
+								$data=$conexion->cargarGF($_POST['dateini'] ,$_POST['datefin'] 	, "Aire Libre");
 								
 								if($data === false) {
 									
@@ -151,11 +174,11 @@
 									echo '<li>
 									<div class="event-text">
 									<div class="event-details content-template">
-									<h4 class="event-title">'.$row['name'].'</h4>
+									<h4 class="event-title">'.$row['nombre'].'</h4>
 									<div class="event-date">'.$row['fecha'].'</div>
 									<div class="event-location">
-									<a href="../Persistence/validar.php" class="form-btn semibold">Inscribirse!</a></div></div>
-									<div class="event-description content-template">'.$row['descr'].'.</div></div>
+									<button onclick="mostrarMapa('.$row['nombre'].','.$row['latitud'].','.$row['longitud'].')"  href="" class="button semibold">Mostrar Mapa</button></div></div>
+									<div class="event-description content-template">'.$row['descr'].'</div></div>
 									<div class="event-image">
 									<img src="../../images/AireLibre.jpg" alt="your text" /></div>';
 
@@ -281,20 +304,19 @@
 			</footer>
 
 			</main>
-
-		</div>
-		<script type='text/javascript' src='js/jquery.js'></script>
-		<script type='text/javascript' src='js/jquery-migrate.js'></script>
-		<script type='text/javascript' src='js/jquery.form.js'></script>
-		<script type='text/javascript' src='js/jquery.mobile.custom.js'></script>
-		<script type='text/javascript' src='js/modernizr.js'></script>
-		<script type='text/javascript' src='js/response.js'></script>
-		<script type='text/javascript' src='js/swiper.js'></script>
-		<script type='text/javascript' src='js/waypoints.js'></script>
-		<script type='text/javascript' src='js/jquery.stellar.js'></script>
-		<script type='text/javascript' src='js/module.js'></script>
-		<script type='text/javascript' src='js/bootstrap.min.js'></script>
-		<script src="js/wow.min.js"></script>
+</div>
+		<script type='text/javascript' src='../../js/jquery.js'></script>
+		<script type='text/javascript' src='../../js/jquery-migrate.js'></script>
+		<script type='text/javascript' src='../../js/jquery.form.js'></script>
+		<script type='text/javascript' src='../../js/jquery.mobile.custom.js'></script>
+		<script type='text/javascript' src='../../js/modernizr.js'></script>
+		<script type='text/javascript' src='../../js/response.js'></script>
+		<script type='text/javascript' src='../../js/swiper.js'></script>
+		<script type='text/javascript' src='../../js/waypoints.js'></script>
+		<script type='text/javascript' src='../../js/jquery.stellar.js'></script>
+		<script type='text/javascript' src='../../js/module.js'></script>
+		<script type='text/javascript' src='../../js/bootstrap.min.js'></script>
+		<script src="../../js/wow.min.js"></script>
 		<script>
 		new WOW().init();
 		</script>

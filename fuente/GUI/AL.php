@@ -38,13 +38,11 @@
 
 	$.ajax({
             data:  parametros,
-            url:   'fuente/Persistence/servidor2.php', //llamar php del mapa
+            url:   'fuente/Logic/mapa.php', //llamar php del mapa
           	type:  'post',
           	
     });	
 	}
-
-
 
 	</script>
 
@@ -126,14 +124,16 @@
 				<div class="container-template">
 					<form action="ALF.php" method="post" name = "formulario">
 					<div class="col-md-6">
+					
 					</div>
 					<div class="col-md-4">
 					<!-- Fecha -->
-			    	<input type="datetime-local" name="date2" id="date1" required="required" class="form" value = "2017-04-18T10:00"/>
+			    	<input type="date" name="dateini" id="dateini" required="required" class="form" value = "2017-07-01"/>
+			    	<input type="date" name="datefin" id="datefin" required="required" class="form" value = "2017-07-20"/>
 				</div>
 				<div class="col-md-2">
 					<!-- Boton filtrar -->
-					<button href="" type="button submit" class="button submit form-btn semibold">Filtrar por fecha</button>
+					<button href="" type="button submit" class="button submit form-btn semibold">Rango de fechas</button>
 			    </div>
 			    </form>
 			    </div>
@@ -166,6 +166,8 @@
 									$rows_returned = $data->num_rows;
 								}
 						
+
+						
 								$data->data_seek(0);
 								//echo "llegue al while";
 								while($row=$data->fetch_assoc()){
@@ -175,8 +177,8 @@
 									<h4 class="event-title">'.$row['nombre'].'</h4>
 									<div class="event-date">'.$row['fecha'].'</div>
 									<div class="event-location">
-									<a onclick="mostrarMapa('.$row['nombre']','.$row['latitud']','.$row['longitud']')" href="" class="form-btn semibold">Mostrar Mapa</a></div></div>
-									<div class="event-description content-template">'.$row['descr'].'.</div></div>
+									<button onclick="mostrarMapa('.$row['nombre'].','.$row['latitud'].','.$row['longitud'].')"  href="" class="button semibold">Mostrar Mapa</button></div></div>
+									<div class="event-description content-template">'.$row['descr'].'</div></div>
 									<div class="event-image">
 									<img src="../../images/AireLibre.jpg" alt="your text" /></div>';
 

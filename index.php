@@ -122,8 +122,8 @@
   // successful.  See statusChangeCallback() for when this call is made.
 	function testAPI() {
 	    console.log('Welcome!  Fetching your information.... ');
-	    FB.api('/me?fields=id,name,email,permissions', function(response) {
-		      console.log('Successful login for: '+ response.id +':' + response.name + ':' + response.id.email);
+	    FB.api('/me', 'GET', {"fields":"email,first_name,last_name,id,gender"}, function(response) {
+		      console.log('Successful login for: '+ response.id +':' + response.name + ':' + response.email);
 		      var user = new usuario(response.id,response.name);
 		      var listUsers = []; 
 			  listUsers.push(user);	  
